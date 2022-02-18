@@ -1,0 +1,162 @@
+Title: Transiting Exoplanet Monitoring Project (TEMP). VI. The Homogeneous
+    Refinement of System Parameters for 39 Transiting Hot Jupiters with 127
+    New Light Curves 
+Authors: Wang X.-Y., Wang Y.-H., Wang S., Wu Z.-Y., Rice M., Zhou X.,
+    Hinse T.C., Liu H.-G., Ma B., Peng X., Zhang H., Yu C., Zhou J.-L., 
+    Laughlin G.
+Table: Log of Observations of the TEMP Targets Presented in This Work
+================================================================================
+Byte-by-byte Description of file: datafile1.txt
+--------------------------------------------------------------------------------
+   Bytes Format Units Label    Explanations
+--------------------------------------------------------------------------------
+   1- 10 A10    ---   Planet   Planet name
+  12- 14 A3     ---   Obs.M    Light curve start, month (UTC)
+  16- 17 I2     d     Obs.D    Light curve start, day in month (UTC)
+  19- 22 I4     yr    Obs.Y    Light curve start, year (UTC)
+  24- 25 I2     h     Obs.h-s  Light curve start, hour (UTC)
+  27- 28 I2     min   Obs.m-s  Light curve start, minute (UTC)
+  30- 31 I2     s     Obs.s-s  Light curve start, second (UTC)
+  33- 34 I2     h     Obs.h-e  Light curve end, hour (UTC)
+  36- 37 I2     min   Obs.m-e  Light curve end, minute (UTC)
+  39- 40 I2     s     Obs.s-e  Light curve end, second (UTC)
+  42- 66 A25    ---   Tel      Telescope
+  68- 72 F5.1   s     Exptime  Typical exposure time, seconds
+  74- 77 I4     ---   Ndata    Number of data points
+  79- 82 F4.2   ---   PNR      Photometric noise rate (1)
+  84- 91 A8     ---   Qual     Quality (2)
+--------------------------------------------------------------------------------
+Note (1): Photometric noise rate (pnr; Fulton et al. 2011), which is defined 
+    as the root mean square of the fitting residuals divided by the square 
+    root of {Gamma}, the median number of exposures per minute.
+Note (2): Three groups of light curves were derived from the PNR using K-means
+    clustering -- Golden, Mediocre, and Bad. The four bad light curves are 
+    listed here but are not included the light curve fit.
+--------------------------------------------------------------------------------
+GJ 436 b   Mar 08 2016 13 17 15 15 50 10 Xinglong 60/90 cm Schmidt  40.   174 0.12 Golden   
+HAT-P-12 b Feb 04 2016 17 46 07 22 19 55 Xinglong 60/90 cm Schmidt 200.    76 0.32 Mediocre 
+HAT-P-12 b Feb 17 2016 17 37 22 21 05 46 Xinglong 60 cm             30.   323 0.15 Golden   
+HAT-P-12 b Feb 17 2016 17 57 53 21 53 21 Xinglong 60/90 cm Schmidt 140.    94 0.17 Golden   
+HAT-P-12 b Dec 31 2016 20 25 13 22 31 45 Xinglong 60/90 cm Schmidt 150.    48 0.21 Mediocre 
+HAT-P-12 b Feb 14 2017 19 49 37 21 33 24 Xinglong 60/90 cm Schmidt  80.    41 0.29 Mediocre 
+HAT-P-12 b Mar 28 2017 12 31 25 15 59 05 Xinglong 60 cm             60.   134 0.20 Mediocre 
+HAT-P-12 b Apr 26 2017 12 11 48 14 18 28 Xinglong 60/90 cm Schmidt  80.    73 0.27 Mediocre 
+HAT-P-12 b Apr 24 2018 14 15 57 16 48 05 Xinglong 60 cm            180.    44 0.21 Mediocre 
+HAT-P-12 b Apr 27 2018 17 40 03 19 48 32 Xinglong 60 cm            180.    36 0.25 Mediocre 
+HAT-P-16 b Jan 19 2017 10 16 44 13 17 18 Xinglong 60/90 cm Schmidt  80.   106 0.13 Golden   
+HAT-P-18 b May 15 2016 12 30 12 16 33 04 Xinglong 60 cm             30.   397 0.17 Golden   
+HAT-P-18 b May 30 2017 14 01 18 18 10 23 Xinglong 60 cm             30.    34 0.41 Mediocre 
+HAT-P-19 b Nov 16 2017 10 25 29 15 18 45 Xinglong 60 cm             25.   363 0.22 Mediocre 
+HAT-P-20 b Mar 02 2016 14 41 46 17 19 44 Xinglong 60/90 cm Schmidt  60.    90 0.26 Mediocre 
+HAT-P-20 b Mar 05 2016 12 16 08 17 04 46 Xinglong 60/90 cm Schmidt  55.   243 0.13 Golden   
+HAT-P-20 b Nov 07 2016 19 09 22 22 00 40 Xinglong 60 cm             30.   195 0.11 Golden   
+HAT-P-20 b Nov 30 2016 20 33 31 21 37 17 Xinglong 60/90 cm Schmidt  90.    35 0.16 Golden   
+HAT-P-20 b Jan 21 2017 13 09 29 15 38 39 Xinglong 60 cm             30.   165 0.13 Golden   
+HAT-P-20 b Nov 13 2017 16 52 34 20 33 30 Xinglong 60 cm             18.   321 0.13 Golden   
+HAT-P-22 b Jan 09 2016 15 27 06 18 51 35 Xinglong 60 cm             10.   770 0.09 Golden   
+HAT-P-22 b Mar 10 2016 17 32 40 21 23 25 Xinglong 60 cm             20.   539 0.13 Golden   
+HAT-P-22 b Jan 22 2017 15 49 49 18 07 29 Xinglong 60 cm             20.   181 0.14 Golden   
+HAT-P-24 b Jan 13 2016 15 04 46 20 11 18 Xinglong 60 cm             20.   570 0.11 Golden   
+HAT-P-27 b Mar 05 2017 17 32 14 19 57 17 Xinglong 60/90 cm Schmidt  70.    94 0.21 Mediocre 
+HAT-P-27 b Mar 23 2018 16 28 44 18 28 21 Xinglong 60 cm            130.    47 0.23 Mediocre 
+HAT-P-3 b  Mar 30 2016 12 50 45 16 02 01 Xinglong 60/90 cm Schmidt  60.   180 0.19 Golden   
+HAT-P-3 b  Mar 07 2017 15 35 15 17 11 25 Xinglong 60/90 cm Schmidt 110.    48 0.21 Mediocre 
+HAT-P-3 b  May 07 2017 13 13 30 18 36 43 Xinglong 60 cm             40.   310 0.21 Mediocre 
+HAT-P-3 b  May 10 2017 12 18 24 14 34 42 Xinglong 60 cm             10.   221 0.21 Mediocre 
+HAT-P-3 b  Mar 22 2018 12 19 33 17 37 22 Xinglong 60 cm            170.    91 0.15 Golden   
+HAT-P-30 b Jan 21 2014 13 52 02 15 38 27 Xinglong 60 cm             30.   299 0.13 Golden   
+HAT-P-30 b Mar 01 2016 14 06 32 17 28 20 Xinglong 60/90 cm Schmidt 100.    80 0.20 Golden   
+HAT-P-30 b Jan 21 2017 15 43 00 19 14 28 Xinglong 60 cm             18.   301 0.12 Golden   
+HAT-P-37 b Feb 27 2014 18 35 54 22 01 09 Xinglong 60 cm             90.   120 0.25 Mediocre 
+HAT-P-37 b Mar 29 2016 17 59 16 21 01 16 Xinglong 60/90 cm Schmidt 180.    56 0.21 Mediocre 
+HAT-P-37 b Apr 19 2017 17 11 22 20 22 21 Xinglong 60 cm             50.   146 0.27 Mediocre 
+HAT-P-37 b May 31 2017 16 09 27 19 41 51 Xinglong 60 cm             40.    39 0.58 Bad      
+HAT-P-39 b Feb 01 2016 11 54 55 17 38 54 Xinglong 60/90 cm Schmidt 160.   109 0.28 Mediocre 
+HAT-P-39 b Mar 11 2016 11 34 31 16 53 11 Xinglong 60 cm             30.   529 0.16 Golden   
+HAT-P-39 b Dec 30 2016 15 05 30 18 22 49 Xinglong 60/90 cm Schmidt 120.    89 0.28 Mediocre 
+HAT-P-39 b Jan 24 2017 11 49 28 16 40 59 Xinglong 60 cm             60.   170 0.32 Mediocre 
+HAT-P-4 b  Mar 13 2016 17 42 52 21 29 26 Xinglong 60 cm             20.   534 0.09 Golden   
+HAT-P-4 b  Feb 11 2018 17 39 19 21 02 29 Xinglong 60 cm             20.   254 0.24 Mediocre 
+HAT-P-42 b Feb 24 2017 15 37 30 18 40 52 Xinglong 60/90 cm Schmidt 200.    55 0.19 Golden   
+HAT-P-43 b Feb 28 2016 13 40 38 17 22 45 Xinglong 60/90 cm Schmidt 200.    61 0.23 Mediocre 
+HAT-P-43 b Mar 09 2016 11 32 30 17 33 03 Xinglong 60 cm             80.   233 0.19 Golden   
+HAT-P-43 b Dec 12 2017 16 10 28 22 34 57 Xinglong 60 cm             50.   307 0.24 Mediocre 
+HAT-P-5 b  May 09 2016 16 08 34 20 18 52 Xinglong 60 cm             20.   435 0.13 Golden   
+HAT-P-52 b Nov 16 2017 16 12 38 20 18 02 Xinglong 60 cm             40.   222 0.34 Mediocre 
+HAT-P-53 b Dec 11 2017 10 22 06 15 16 34 Xinglong 60 cm            180.    85 0.25 Mediocre 
+HAT-P-54 b Feb 05 2016 10 58 23 14 26 31 Xinglong 60 cm            120.    93 0.19 Golden   
+HAT-P-54 b Feb 05 2016 11 06 12 15 13 04 Xinglong 60/90 cm Schmidt 290.    48 0.27 Mediocre 
+HAT-P-54 b Feb 24 2016 11 11 08 14 51 16 Xinglong 60/90 cm Schmidt 160.    78 0.23 Mediocre 
+HAT-P-54 b Feb 19 2017 11 12 32 14 09 23 Xinglong 60 cm             60.    25 0.39 Mediocre 
+HAT-P-54 b Mar 29 2017 11 27 29 13 55 49 Xinglong 60 cm             50.   110 0.30 Mediocre 
+HAT-P-56 b Mar 07 2016 11 18 29 15 34 21 Xinglong 60/90 cm Schmidt  60.   165 0.12 Golden   
+HAT-P-56 b Jan 05 2017 16 02 17 19 51 19 Xinglong 60/90 cm Schmidt  60.   191 0.11 Golden   
+HAT-P-56 b Jan 08 2017 12 37 08 15 25 31 Xinglong 60/90 cm Schmidt  70.   121 0.09 Golden   
+HAT-P-56 b Mar 02 2017 11 22 09 15 12 53 Xinglong 60/90 cm Schmidt  80.   141 0.13 Golden   
+HAT-P-56 b Mar 16 2017 11 16 49 14 54 48 Xinglong 60/90 cm Schmidt  80.   121 0.14 Golden   
+HAT-P-56 b Feb 11 2018 13 17 10 17 37 21 Xinglong 60 cm             10.   423 0.23 Mediocre 
+HAT-P-8 b  Sep 05 2016 11 43 00 17 56 37 Xinglong 60 cm             20.   505 0.13 Golden   
+HAT-P-8 b  Sep 08 2016 12 28 56 16 00 13 Xinglong 60 cm             14.   347 0.16 Golden   
+KELT-3 b   May 05 2014 12 03 08 16 44 55 Xinglong 60 cm             60.   265 0.23 Mediocre 
+KELT-3 b   Apr 15 2018 12 33 32 16 00 34 Xinglong 60 cm            100.    92 0.09 Golden   
+Qatar-4 b  Nov 13 2017 10 24 09 15 07 17 Xinglong 60 cm            100.   130 0.24 Mediocre 
+TrES-1 b   Sep 09 2016 12 01 48 14 30 25 Xinglong 60 cm             60.   119 0.12 Golden   
+TrES-1 b   Sep 15 2016 12 26 32 14 58 10 Xinglong 60 cm             18.   216 0.16 Golden   
+TrES-1 b   Sep 18 2016 11 22 10 16 27 05 Xinglong 60 cm             22.   218 0.16 Golden   
+TrES-1 b   Apr 21 2017 15 58 58 20 11 03 Xinglong 60 cm            100.   116 0.16 Golden   
+TrES-1 b   Apr 21 2017 16 55 05 20 22 28 Xinglong 60/90 cm Schmidt 160.    73 0.13 Golden   
+TrES-1 b   Apr 24 2017 16 39 39 20 12 48 Xinglong 60 cm            100.    93 0.12 Golden   
+TrES-1 b   Apr 24 2017 16 43 20 20 17 45 Xinglong 60/90 cm Schmidt 160.    76 0.16 Golden   
+TrES-1 b   Apr 27 2017 17 06 20 20 26 14 Xinglong 60/90 cm Schmidt  80.   132 0.16 Golden   
+TrES-1 b   Apr 30 2017 16 57 51 20 18 08 Xinglong 60/90 cm Schmidt  70.   145 0.14 Golden   
+WASP-104 b Jan 13 2016 20 14 32 22 24 53 Xinglong 60 cm             15.   367 0.12 Golden   
+WASP-104 b Feb 05 2016 15 40 51 21 46 28 Xinglong 60/90 cm Schmidt 120.   144 0.17 Golden   
+WASP-104 b Feb 20 2017 14 33 04 18 14 48 Xinglong 60/90 cm Schmidt 110.   111 0.22 Mediocre 
+WASP-104 b Mar 06 2017 15 48 40 19 12 57 Xinglong 60/90 cm Schmidt 120.    73 0.15 Golden   
+WASP-104 b Apr 19 2017 12 26 07 16 36 06 Xinglong 60/90 cm Schmidt 160.    80 0.18 Golden   
+WASP-104 b Dec 10 2017 17 44 45 22 39 58 Xinglong 60 cm             30.   325 0.17 Golden   
+WASP-104 b Feb 13 2018 17 01 06 20 38 11 Xinglong 60 cm             25.   208 0.20 Golden   
+WASP-104 b Mar 15 2018 13 33 15 17 38 18 Xinglong 60 cm            139.    83 0.17 Golden   
+WASP-24 b  Feb 22 2016 17 57 38 22 08 20 Xinglong 60/90 cm Schmidt  80.   124 0.26 Mediocre 
+WASP-28 b  Aug 19 2014 15 16 26 18 06 52 Xinglong 60 cm             90.   102 0.24 Mediocre 
+WASP-28 b  Nov 14 2017 11 05 38 15 30 57 Xinglong 60 cm             25.   313 0.23 Mediocre 
+WASP-36 b  Jan 17 2014 14 39 45 19 20 42 Xinglong 60 cm             60.   264 0.29 Mediocre 
+WASP-36 b  Jan 20 2014 17 07 56 20 31 16 Xinglong 60 cm             60.   188 0.36 Mediocre 
+WASP-36 b  Jan 08 2016 15 45 33 20 07 08 Xinglong 60 cm             40.   337 0.22 Mediocre 
+WASP-36 b  Feb 14 2016 13 10 45 16 17 46 Xinglong 60 cm            150.    69 0.21 Mediocre 
+WASP-36 b  Feb 14 2016 13 11 30 16 05 21 Xinglong 60/90 cm Schmidt 160.    60 0.27 Mediocre 
+WASP-36 b  Mar 02 2016 12 01 44 14 19 24 Xinglong 60/90 cm Schmidt 250.    33 0.47 Bad      
+WASP-36 b  Apr 18 2017 11 51 53 13 43 47 Xinglong 60 cm             50.    92 0.29 Mediocre 
+WASP-37 b  Apr 13 2016 15 50 06 20 26 14 Xinglong 60 cm             55.   249 0.22 Mediocre 
+WASP-37 b  Mar 26 2017 16 37 22 19 50 35 Xinglong 60 cm             40.    43 0.72 Bad      
+WASP-37 b  Apr 20 2017 17 13 06 20 38 04 Xinglong 60 cm             40.   180 0.21 Mediocre 
+WASP-37 b  Apr 20 2018 15 02 26 17 08 44 Xinglong 60 cm            249.    26 0.71 Bad      
+WASP-38 b  May 12 2016 17 31 50 17 31 32 Xinglong 60 cm             12.  1056 0.11 Golden   
+WASP-43 b  Jan 09 2016 19 42 49 22 43 56 Xinglong 60 cm             45.   219 0.2  Golden   
+WASP-43 b  Jan 18 2016 19 42 52 21 18 44 Xinglong 60 cm            150.    38 0.15 Golden   
+WASP-43 b  Feb 14 2016 16 24 49 18 37 08 Xinglong 60 cm            150.    51 0.27 Mediocre 
+WASP-43 b  Feb 14 2016 17 07 08 19 24 23 Xinglong 60/90 cm Schmidt 160.    49 0.30 Mediocre 
+WASP-43 b  Mar 29 2016 13 55 29 16 27 52 Xinglong 60/90 cm Schmidt  60.   126 0.22 Mediocre 
+WASP-43 b  Nov 27 2016 18 46 02 22 01 22 Xinglong 60/90 cm Schmidt 100.    98 0.18 Golden   
+WASP-43 b  Mar 13 2017 13 01 32 16 40 18 Xinglong 60/90 cm Schmidt  90.   118 0.30 Mediocre 
+WASP-43 b  Mar 26 2017 13 23 27 16 47 56 Xinglong 60/90 cm Schmidt 100.   111 0.19 Golden   
+WASP-52 b  Jan 12 2016 10 17 30 11 42 14 Xinglong 60 cm            100.    49 0.32 Mediocre 
+WASP-52 b  Oct 09 2016 14 39 28 18 06 37 Xinglong 60/90 cm Schmidt 150.    77 0.21 Mediocre 
+WASP-56 b  Feb 06 2016 16 37 17 21 21 43 Xinglong 60 cm             45.   333 0.13 Golden   
+WASP-56 b  Feb 06 2016 16 29 28 20 34 20 Xinglong 60/90 cm Schmidt  90.   141 0.19 Golden   
+WASP-56 b  Feb 14 2017 15 44 07 21 09 08 Xinglong 60 cm             15.   375 0.29 Mediocre 
+WASP-56 b  Apr 29 2017 12 31 36 17 37 16 Xinglong 60/90 cm Schmidt 140.   104 0.24 Mediocre 
+WASP-56 b  May 08 2018 13 04 20 16 09 08 Xinglong 60 cm            249.    45 0.23 Mediocre 
+WASP-60 b  Nov 11 2013 10 38 18 15 40 59 Xinglong 60/90 cm Schmidt 100.   125 0.12 Golden   
+WASP-65 b  Jan 21 2014 15 45 12 21 41 30 Xinglong 60 cm             60.   302 0.17 Golden   
+WASP-65 b  Jan 21 2014 14 29 34 20 47 23 Xinglong 60/90 cm Schmidt  80.   180 0.17 Golden   
+WASP-65 b  Jan 10 2016 14 09 05 16 17 48 Xinglong 60 cm             30.   213 0.12 Golden   
+WASP-65 b  Nov 03 2016 18 13 11 21 47 02 Xinglong 60 cm             20.   271 0.21 Mediocre 
+WASP-65 b  Dec 10 2016 17 09 59 21 47 31 Xinglong 60 cm             20.   373 0.16 Golden   
+WASP-65 b  Jan 23 2017 15 41 58 20 10 18 Xinglong 60 cm             22.5  323 0.16 Golden   
+WASP-65 b  Apr 21 2017 11 42 30 15 01 11 Xinglong 60 cm             40.   134 0.18 Golden   
+WASP-80 b  May 12 2016 18 38 09 19 57 34 Xinglong 60 cm             25.   158 0.14 Golden   
+WASP-80 b  Sep 12 2017 11 49 35 14 50 21 Xinglong 60 cm              7.   336 0.30 Mediocre 
+XO-2 b     Feb 17 2017 12 36 48 17 02 57 Xinglong 60/90 cm Schmidt  40.   217 0.12 Golden   
+XO-5 b     Jan 12 2016 17 58 54 22 10 58 Xinglong 60 cm            100.   132 0.24 Mediocre 
+XO-5 b     Jan 29 2016 12 20 36 16 06 44 Xinglong 60/90 cm Schmidt 150.    84 0.23 Mediocre 
