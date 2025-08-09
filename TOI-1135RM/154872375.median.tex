@@ -1,0 +1,136 @@
+\documentclass{aastex62}
+\providecommand{\bjdtdb}{\ensuremath{\rm {BJD_{TDB}}}}
+\providecommand{\tjdtdb}{\ensuremath{\rm {TJD_{TDB}}}}
+\providecommand{\feh}{\ensuremath{\left[{\rm Fe}/{\rm H}\right]}}
+\providecommand{\teff}{\ensuremath{T_{\rm eff}}}
+\providecommand{\teq}{\ensuremath{T_{\rm eq}}}
+\providecommand{\ecosw}{\ensuremath{e\cos{\omega_*}}}
+\providecommand{\esinw}{\ensuremath{e\sin{\omega_*}}}
+\providecommand{\msun}{\ensuremath{\,M_\Sun}}
+\providecommand{\rsun}{\ensuremath{\,R_\Sun}}
+\providecommand{\lsun}{\ensuremath{\,L_\Sun}}
+\providecommand{\mj}{\ensuremath{\,M_{\rm J}}}
+\providecommand{\rj}{\ensuremath{\,R_{\rm J}}}
+\providecommand{\me}{\ensuremath{\,M_{\rm E}}}
+\providecommand{\re}{\ensuremath{\,R_{\rm E}}}
+\providecommand{\fave}{\langle F \rangle}
+\providecommand{\fluxcgs}{10$^9$ erg s$^{-1}$ cm$^{-2}$}
+\usepackage{apjfonts}
+\begin{document}
+\startlongtable
+\begin{deluxetable*}{lccccccc}
+\tablecaption{Median values and 68\% confidence interval for 154872375., created using EXOFASTv2 commit number 4e2a901f}
+\tablehead{\colhead{~~~Parameter} & \colhead{Description} & \multicolumn{6}{c}{Values}}
+\startdata
+\smallskip\\\multicolumn{2}{l}{Stellar Parameters:}&0\smallskip\\
+~~~~$M_*$\dotfill &Mass (\msun)\dotfill &$1.119\pm0.069$\\
+~~~~$R_*$\dotfill &Radius (\rsun)\dotfill &$1.202\pm0.037$\\
+~~~~$R_{*,SED}$\dotfill &Radius$^{1}$ (\rsun)\dotfill &$1.146^{+0.018}_{-0.016}$\\
+~~~~$L_*$\dotfill &Luminosity (\lsun)\dotfill &$2.08^{+0.22}_{-0.20}$\\
+~~~~$F_{Bol}$\dotfill &Bolometric Flux (cgs)\dotfill &$5.12^{+0.54}_{-0.48} \times 10^{-9}$\\
+~~~~$\rho_*$\dotfill &Density (cgs)\dotfill &$0.908^{+0.084}_{-0.079}$\\
+~~~~$\log{g}$\dotfill &Surface gravity (cgs)\dotfill &$4.328^{+0.028}_{-0.031}$\\
+~~~~$T_{\rm eff}$\dotfill &Effective temperature (K)\dotfill &$6320\pm120$\\
+~~~~$T_{\rm eff,SED}$\dotfill &Effective temperature$^{1}$ (K)\dotfill &$6470\pm200$\\
+~~~~$[{\rm Fe/H}]$\dotfill &Metallicity (dex)\dotfill &$-0.039^{+0.060}_{-0.062}$\\
+~~~~$[{\rm Fe/H}]_{0}$\dotfill &Initial Metallicity$^{2}$ \dotfill &$0.012^{+0.056}_{-0.055}$\\
+~~~~$Age$\dotfill &Age (Gyr)\dotfill &$3.3^{+2.2}_{-1.6}$\\
+~~~~$EEP$\dotfill &Equal Evolutionary Phase$^{3}$ \dotfill &$364^{+36}_{-26}$\\
+~~~~$V_{\rm gamma}$\dotfill &Lorentzian dispersion or Differential rotation (m/s)\dotfill &$1000.00$\\
+~~~~$V_{\rm zeta}$\dotfill &Macroturbulence dispersion (m/s)\dotfill &$5200^{+1200}_{-1100}$\\
+~~~~$V_{\rm xi}$\dotfill &Microturbulence dispersion (m/s)\dotfill &$1500^{+910}_{-850}$\\
+~~~~$V_{\rm alpha}$\dotfill &Valpha (m/s)\dotfill &$0.00$\\
+~~~~$A_V$\dotfill &V-band extinction (mag)\dotfill &$0.29^{+0.12}_{-0.13}$\\
+~~~~$\sigma_{SED}$\dotfill &SED photometry error scaling \dotfill &$0.99^{+0.45}_{-0.30}$\\
+~~~~$\varpi$\dotfill &Parallax (mas)\dotfill &$8.774\pm0.015$\\
+~~~~$d$\dotfill &Distance (pc)\dotfill &$113.98\pm0.19$\\
+\smallskip\\\multicolumn{2}{l}{Planetary Parameters:}&b\smallskip\\
+~~~~$P$\dotfill &Period (days)\dotfill &$8.0277327^{+0.0000019}_{-0.0000018}$\\
+~~~~$R_P$\dotfill &Radius (\rj)\dotfill &$0.885\pm0.028$\\
+~~~~$M_P$\dotfill &Mass (\mj)\dotfill &$0.083^{+0.051}_{-0.052}$\\
+~~~~$T_C$\dotfill &Observed Time of conjunction$^{4}$ (\bjdtdb)\dotfill &$2460466.30839\pm0.00018$\\
+~~~~$T_C$\dotfill &Model Time of conjunction$^{4,5}$ (\tjdtdb)\dotfill &$2460466.30793\pm0.00018$\\
+~~~~$T_T$\dotfill &Model time of min proj sep$^{5,6,7}$ (\tjdtdb)\dotfill &$2459912.39437\pm0.00012$\\
+~~~~$T_0$\dotfill &Obs time of min proj sep$^{6,8,9}$ (\bjdtdb)\dotfill &$2459912.39483^{+0.00012}_{-0.00011}$\\
+~~~~$a$\dotfill &Semi-major axis (AU)\dotfill &$0.0815^{+0.0016}_{-0.0017}$\\
+~~~~$i$\dotfill &Inclination (Degrees)\dotfill &$89.30^{+0.19}_{-0.24}$\\
+~~~~$e$\dotfill &Eccentricity \dotfill &$0.062^{+0.12}_{-0.045}$\\
+~~~~$\omega_*$\dotfill &Arg of periastron (Degrees)\dotfill &$-10^{+100}_{-150}$\\
+~~~~$\dot{\omega}_{\rm GR}$\dotfill &Computed GR precession ($^\circ$/century)\dotfill &$0.675^{+0.035}_{-0.030}$\\
+~~~~$T_{\rm eq}$\dotfill &Equilibrium temp$^{10}$ (K)\dotfill &$1171\pm25$\\
+~~~~$\tau_{\rm circ}$\dotfill &Tidal circ timescale (Gyr)\dotfill &$3.5^{+2.7}_{-2.5}$\\
+~~~~$\tau_{\rm tidalefficiency}$\dotfill &Tidal efficiency factor \dotfill &$0.43^{+1.2}_{-0.37} \times 10^{-17}$\\
+~~~~$\tau_{\rm CE}$\dotfill &Convective tidal realignment timescale (Gyr)\dotfill &$0.46^{+2.3}_{-0.29} \times 10^{7}$\\
+~~~~$\tau_{\rm RA}$\dotfill &radiative realignment timescale (Gyr)\dotfill &$0.47^{+2.3}_{-0.30} \times 10^{12}$\\
+~~~~$K$\dotfill &RV semi-amplitude (m/s)\dotfill &$8.0^{+4.7}_{-4.9}$\\
+~~~~$R_P/R_*$\dotfill &Radius of planet in stellar radii \dotfill &$0.07566^{+0.00022}_{-0.00020}$\\
+~~~~$a/R_*$\dotfill &Semi-major axis in stellar radii \dotfill &$14.57\pm0.44$\\
+~~~~$a/R_p$\dotfill &Semi-major axis in planetary radii \dotfill &$192.6^{+5.7}_{-5.8}$\\
+~~~~$\delta$\dotfill &$\left(R_P/R_*\right)^2$ \dotfill &$0.005725^{+0.000034}_{-0.000031}$\\
+~~~~$\delta_{\rm B}$\dotfill &Transit depth in B (frac)\dotfill &$0.00759^{+0.00026}_{-0.00024}$\\
+~~~~$\delta_{\rm g'}$\dotfill &Transit depth in g' (frac)\dotfill &$0.00728^{+0.00024}_{-0.00023}$\\
+~~~~$\delta_{\rm i'}$\dotfill &Transit depth in i' (frac)\dotfill &$0.00632\pm0.00017$\\
+~~~~$\delta_{\rm TESS}$\dotfill &Transit depth in TESS (frac)\dotfill &$0.006287^{+0.000057}_{-0.000058}$\\
+~~~~$\delta_{\rm V}$\dotfill &Transit depth in V (frac)\dotfill &$0.00695^{+0.00022}_{-0.00020}$\\
+~~~~$\tau$\dotfill &In/egress transit duration (days)\dotfill &$0.01348^{+0.00039}_{-0.00021}$\\
+~~~~$T_{14}$\dotfill &Total transit duration (days)\dotfill &$0.18590^{+0.00043}_{-0.00039}$\\
+~~~~$T_{FWHM}$\dotfill &FWHM transit duration (days)\dotfill &$0.17236^{+0.00034}_{-0.00033}$\\
+~~~~$b$\dotfill &Transit impact parameter \dotfill &$0.176^{+0.062}_{-0.046}$\\
+~~~~$b_S$\dotfill &Eclipse impact parameter \dotfill &$0.174^{+0.057}_{-0.045}$\\
+~~~~$\tau_S$\dotfill &In/egress eclipse duration (days)\dotfill &$0.01339^{+0.00087}_{-0.0010}$\\
+~~~~$T_{S,14}$\dotfill &Total eclipse duration (days)\dotfill &$0.185^{+0.010}_{-0.014}$\\
+~~~~$T_{S,FWHM}$\dotfill &FWHM eclipse duration (days)\dotfill &$0.1711^{+0.0095}_{-0.013}$\\
+~~~~$\delta_{S,2.5\mu m}$\dotfill &BB eclipse depth at 2.5$\mu$m (ppm)\dotfill &$63.1\pm5.4$\\
+~~~~$\delta_{S,5.0\mu m}$\dotfill &BB eclipse depth at 5.0$\mu$m (ppm)\dotfill &$309^{+13}_{-14}$\\
+~~~~$\delta_{S,7.5\mu m}$\dotfill &BB eclipse depth at 7.5$\mu$m (ppm)\dotfill &$489^{+15}_{-16}$\\
+~~~~$\rho_P$\dotfill &Density (cgs)\dotfill &$0.149^{+0.091}_{-0.092}$\\
+~~~~$logg_P$\dotfill &Surface gravity (cgs)\dotfill &$2.44^{+0.19}_{-0.33}$\\
+~~~~$\lambda$\dotfill &Projected Spin-orbit alignment (Degrees)\dotfill &$-68.1^{+7.5}_{-5.3}$\\
+~~~~$vsinI_*$\dotfill &Projected rotational velocity (m/s)\dotfill &$10900^{+3000}_{-2100}$\\
+~~~~$\Theta$\dotfill &Safronov Number \dotfill &$0.0137^{+0.0082}_{-0.0085}$\\
+~~~~$\fave$\dotfill &Incident Flux (\fluxcgs)\dotfill &$0.421^{+0.038}_{-0.037}$\\
+~~~~$T_S$\dotfill &Observed Time of eclipse$^{4}$ (\bjdtdb)\dotfill &$2460470.35^{+0.65}_{-0.34}$\\
+~~~~$T_S$\dotfill &Model Time of eclipse$^{4,5}$ (\tjdtdb)\dotfill &$2460470.35^{+0.65}_{-0.34}$\\
+~~~~$T_E$\dotfill &Model time of sec min proj sep$^{5,6,7}$ (\tjdtdb)\dotfill &$2460679.07^{+0.65}_{-8.4}$\\
+~~~~$T_{E,0}$\dotfill &Obs time of sec min proj sep$^{6,8,9}$ (\bjdtdb)\dotfill &$2460679.07^{+0.65}_{-8.4}$\\
+~~~~$T_P$\dotfill &Time of Periastron (\tjdtdb)\dotfill &$2460464.9^{+2.9}_{-1.7}$\\
+~~~~$T_A$\dotfill &Time of asc node (\tjdtdb)\dotfill &$2460464.32^{+0.31}_{-0.20}$\\
+~~~~$T_D$\dotfill &Time of desc node (\tjdtdb)\dotfill &$2460468.33^{+0.36}_{-0.19}$\\
+~~~~$V_c/V_e$\dotfill &Scaled velocity \dotfill &$1.000^{+0.032}_{-0.030}$\\
+~~~~$e\cos{\omega_*}$\dotfill & \dotfill &$0.006^{+0.13}_{-0.067}$\\
+~~~~$e\sin{\omega_*}$\dotfill & \dotfill &$-0.004^{+0.028}_{-0.042}$\\
+~~~~$M_P\sin i$\dotfill &Minimum mass (\mj)\dotfill &$0.083^{+0.051}_{-0.052}$\\
+~~~~$M_P/M_*$\dotfill &Mass ratio \dotfill &$7.1^{+4.3}_{-4.4} \times 10^{-5}$\\
+~~~~$d/R_*$\dotfill &Separation at mid transit \dotfill &$14.48^{+0.86}_{-0.96}$\\
+~~~~$P_T$\dotfill &A priori non-grazing transit prob \dotfill &$0.0638^{+0.0045}_{-0.0036}$\\
+~~~~$P_{T,G}$\dotfill &A priori transit prob \dotfill &$0.0743^{+0.0053}_{-0.0041}$\\
+~~~~$P_S$\dotfill &A priori non-grazing eclipse prob \dotfill &$0.06396^{+0.0029}_{-0.00086}$\\
+~~~~$P_{S,G}$\dotfill &A priori eclipse prob \dotfill &$0.0744^{+0.0033}_{-0.0010}$\\
+\smallskip\\\multicolumn{2}{l}{Wavelength Parameters:}&B&g'&i'&TESS&V\smallskip\\
+~~~~$u_{1}$\dotfill &Linear limb-darkening coeff \dotfill &$0.506^{+0.051}_{-0.050}$&$0.441^{+0.051}_{-0.053}$&$0.195^{+0.048}_{-0.049}$&$0.185^{+0.018}_{-0.019}$&$0.364^{+0.051}_{-0.050}$\\
+~~~~$u_{2}$\dotfill &Quadratic limb-darkening coeff \dotfill &$0.240^{+0.053}_{-0.051}$&$0.266^{+0.051}_{-0.049}$&$0.284^{+0.048}_{-0.049}$&$0.270\pm0.027$&$0.307^{+0.049}_{-0.051}$\\
+\smallskip\\\multicolumn{2}{l}{Telescope Parameters:}&CARMENESVIS0RV&NEID0RM\smallskip\\
+~~~~$RM\dot{\gamma}$\dotfill &RM slope (m/s/day)\dotfill &--&$66^{+22}_{-23}$\\
+~~~~$\gamma_{\rm rel}$\dotfill &Relative RV Offset (m/s)\dotfill &$1.0^{+3.3}_{-3.2}$&$-21377.6^{+2.6}_{-2.5}$\\
+~~~~$\sigma_J$\dotfill &RV Jitter (m/s)\dotfill &$20.8^{+2.9}_{-2.4}$&$0.00$\\
+~~~~$\sigma_J^2$\dotfill &RV Jitter Variance \dotfill &$434^{+130}_{-93}$&$-53.5^{+16}_{-6.6}$\\
+\smallskip\\\multicolumn{2}{l}{Transit Parameters:}&PvdK UT 2019-11-25 (i')&DSW UT 2019-12-10 (g')&CRCAOKU UT 2020-11-04 (B)&1800 UT 2024-05-18 (TESS)&200 UT 2024-05-18 (TESS)&600 UT 2024-05-18 (TESS)\smallskip\\
+~~~~$\sigma^{2}$\dotfill &Added Variance \dotfill &$1.34\pm0.11 \times 10^{-5}$&$5.84^{+0.44}_{-0.40} \times 10^{-5}$&$6.03^{+1.0}_{-0.90} \times 10^{-6}$&$1.3^{+1.7}_{-1.6} \times 10^{-8}$&$-3.670^{+0.086}_{-0.085} \times 10^{-7}$&$-1.607^{+0.061}_{-0.057} \times 10^{-7}$\\
+~~~~$F_0$\dotfill &Baseline flux \dotfill &$1.00341\pm0.00020$&$1.00098^{+0.00037}_{-0.00034}$&$1.00092\pm0.00023$&$1.000054^{+0.000021}_{-0.000022}$&$0.9999862^{+0.0000094}_{-0.0000096}$&$0.999997\pm0.000011$\\
+\enddata
+\label{tab:154872375.}
+\tablenotetext{}{See Table 3 in \citet{Eastman:2019} for a detailed description of all parameters}
+\tablenotetext{1}{This value ignores the systematic error and is for reference only}
+\tablenotetext{2}{The metallicity of the star at birth}
+\tablenotetext{3}{Corresponds to static points in a star's evolutionary history. See \S2 in \citet{Dotter:2016}}
+\tablenotetext{4}{Time of conjunction is commonly reported as the ``transit time''}
+\tablenotetext{5}{\tjdtdb is the target's barycentric frame and corrects for light travel time}
+\tablenotetext{6}{Time of minimum projected separation is a more correct ``transit time''}
+\tablenotetext{7}{Use this to model TTVs, e}
+\tablenotetext{8}{At the epoch that minimizes the covariance between $T_C$ and Period}
+\tablenotetext{9}{Use this to predict future transit times}
+\tablenotetext{10}{Assumes no albedo and perfect redistribution}
+\end{deluxetable*}
+\bibliographystyle{apj}
+\bibliography{References}
+\end{document}
