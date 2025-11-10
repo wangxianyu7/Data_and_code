@@ -5,3 +5,4 @@ Data and code of published works.
 - TEMP VI: [Transiting Exoplanet Monitoring Project (TEMP). VI. The Homogeneous Refinement of System Parameters for 39 Transiting Hot Jupiters with 127 New Light Curves](https://ui.adsabs.harvard.edu/abs/2021ApJS..255...15W/abstract)
 - WarmJupitersAreAligned: [Single-Star Warm-Jupiter Systems Tend to Be Aligned, Even Around Hot Stellar Hosts](https://ui.adsabs.harvard.edu/abs/2024ApJ...973L..21W/abstract) $${\color{red} AAS \space Nova \space Highlighted}$$
 - HighMassRatioSystemsTendToHaveLowStellarObliuiqties: [From Misaligned Sub-Saturns to Aligned Brown Dwarfs: The Highest Mp/M* Systems Exhibit Low Obliquities, Even around Hot Stars](https://ui.adsabs.harvard.edu/abs/2025ApJ...983L..42R/abstract) $${\color{red} AAS \space Nova \space Highlighted}$$
+- TOI-1135RM: [Early Evidence for Polar Orbits of Sub-Saturns Around Hot Stars](https://ui.adsabs.harvard.edu/abs/2025arXiv251020740D/abstract)
