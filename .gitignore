@@ -1,5 +1,11 @@
+# macOS resource forks
+._*
+
 WASP148_MutualInclination/
 WASP148_MutualInclination/.vscode/
 e-λ_Trends/Figs/*.pdf
 */*/*_
 ./RM_DR
+converter.py
+main.ipynb
+Run.ipynb
