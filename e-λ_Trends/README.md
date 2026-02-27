@@ -1,5 +1,7 @@
 ## Distinct e-λ Trends in Three Gas-Giant Mass Regimes
 
+This repository contains the data used for the homogeneous reanalysis of Rossiter–McLaughlin measurements across ~N exoplanet systems. The associated manuscript is to be submitted soon.
+
 ## Figures
 
 ### CoRoT-18 b
