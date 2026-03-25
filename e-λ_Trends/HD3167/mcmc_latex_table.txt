@@ -1,0 +1,115 @@
+parameter & value & unit & fit/fixed \\ 
+\hline 
+\multicolumn{4}{c}{\textit{Fitted parameters}} \\ 
+\hline 
+$\gamma_{\rm n20160707.APF.RV}$ & $-0.00056\pm0.00037$ & km/s& fit \\ 
+$\sigma^2_{\rm jit;n20160707.APF.RV}$ & $0.0000119_{-0.0000019}^{+0.0000022}$ & km2/s2& fit \\ 
+$\gamma_{\rm n20160709.HARPS-N.RV}$ & $19.37031\pm0.00018$ & km/s& fit \\ 
+$\sigma^2_{\rm jit;n20160709.HARPS-N.RV}$ & $0.00000200_{-0.00000034}^{+0.00000041}$ & km2/s2& fit \\ 
+$\gamma_{\rm n20160710.HIRES.RV}$ & $-0.00088\pm0.00047$ & km/s& fit \\ 
+$\sigma^2_{\rm jit;n20160710.HIRES.RV}$ & $0.0000111_{-0.0000022}^{+0.0000028}$ & km2/s2& fit \\ 
+$\gamma_{\rm n20160719.HARPS.RV}$ & $19.52368\pm0.00035$ & km/s& fit \\ 
+$\sigma^2_{\rm jit;n20160719.HARPS.RV}$ & $0.00000280_{-0.00000076}^{+0.0000010}$ & km2/s2& fit \\ 
+$\gamma_{\rm n20161002.HARPS-N.RM.RV}$ & $19.53183\pm0.00036$ & km/s& fit \\ 
+$\sigma^2_{\rm jit;n20161002.HARPS-N.RM.RV}$ & $0.00000004_{-0.00000014}^{+0.00000020}$ & km2/s2& fit \\ 
+$\gamma_{\rm n20171123.HARPS-N1.RM.RV}$ & $19.53234_{-0.00063}^{+0.00058}$ & km/s& fit \\ 
+$\sigma^2_{\rm jit;n20171123.HARPS-N1.RM.RV}$ & $0.00000094_{-0.00000050}^{+0.00000079}$ & km2/s2& fit \\ 
+$R_{b/R.\star}$ & $0.01776\pm0.00042$ & & fit \\ 
+$\cos i_b$ & $0.1332_{-0.010}^{+0.0094}$ & & fit \\ 
+$t_0$ & $2457394.37437\pm0.00034$ & BJD_TDB& fit \\ 
+$P_b$ & $0.95965500\pm0.00000025$ & d& fit \\ 
+$K_b$ & $0.00342\pm0.00015$ & km/s& fit \\ 
+$\sqrt{e}\cos\omega$ & $0.005\pm0.032$ & & fit \\ 
+$\sqrt{e}\sin\omega$ & $-0.489_{-0.048}^{+0.055}$ & & fit \\ 
+$R_{c/R.\star}$ & $0.02966\pm0.00072$ & & fit \\ 
+$\cos i_c$ & $0.0102_{-0.0036}^{+0.0024}$ & & fit \\ 
+$t_0$ & $2457394.97842_{-0.00079}^{+0.00090}$ & BJD_TDB& fit \\ 
+$P_c$ & $29.84628_{-0.00013}^{+0.00014}$ & d& fit \\ 
+$K_c$ & $0.00261\pm0.00020$ & km/s& fit \\ 
+$\sqrt{e}\cos\omega$ & $-0.08_{-0.11}^{+0.13}$ & & fit \\ 
+$\sqrt{e}\sin\omega$ & $0.12_{-0.20}^{+0.15}$ & & fit \\ 
+$t_0$ & $2457745.389_{-0.071}^{+0.057}$ & BJD_TDB& fit \\ 
+$P_d$ & $8.4041_{-0.0030}^{+0.0038}$ & d& fit \\ 
+$K_d$ & $0.00178\pm0.00019$ & km/s& fit \\ 
+$\sqrt{e}\cos\omega$ & $0.04\pm0.16$ & & fit \\ 
+$\sqrt{e}\sin\omega$ & $0.14_{-0.24}^{+0.21}$ & & fit \\ 
+$t_0$ & $2457738.432\pm0.069$ & BJD_TDB& fit \\ 
+$P_e$ & $96.39\pm0.38$ & d& fit \\ 
+$K_e$ & $0.00143\pm0.00022$ & km/s& fit \\ 
+$\sqrt{e}\cos\omega$ & $0.27_{-0.18}^{+0.12}$ & & fit \\ 
+$\sqrt{e}\sin\omega$ & $0.24_{-0.28}^{+0.20}$ & & fit \\ 
+$\delta_{\rm n20161031.Spit45.Spit.Tran}$ & $0.048_{-0.029}^{+0.036}$ & & fit \\ 
+$\delta_{\rm n20180521.G141.HST.WFC3.G141.Tran}$ & $0.50\pm0.34$ & & fit \\ 
+$\delta_{\rm n20180522.G141.HST.WFC3.G141.Tran}$ & $0.51\pm0.34$ & & fit \\ 
+$\delta_{\rm n20180720.G141.HST.WFC3.G141.Tran}$ & $0.50\pm0.34$ & & fit \\ 
+$\delta_{\rm n20190613.G141.HST.WFC3.G141.Tran}$ & $0.50\pm0.34$ & & fit \\ 
+$\delta_{\rm n20190614.G141.HST.WFC3.G141.Tran}$ & $0.50\pm0.34$ & & fit \\ 
+$\delta_{\rm n20190614.V.HST.Tran}$ & $0.50\pm0.34$ & & fit \\ 
+$\delta_{\rm n20190812.G141.HST.WFC3.G141.Tran}$ & $0.50\pm0.34$ & & fit \\ 
+$\delta_{\rm n20200706.G141.HST.WFC3.G141.Tran}$ & $0.50\pm0.34$ & & fit \\ 
+$\delta_{\rm n20260122.Spit45.Spit.Tran}$ & $0.049_{-0.030}^{+0.035}$ & & fit \\ 
+$\delta_{\rm n20260122.V.HST.Tran}$ & $0.50\pm0.34$ & & fit \\ 
+$\sigma^2_{\rm n20160213.Kepler.K2.Tran}$ & $0.000000000127\pm0.00000000010$ & relflux2& fit \\ 
+$\sigma^2_{\rm n20161031.Spit45.Spit.Tran}$ & $-0.0000000066\pm0.0000000074$ & relflux2& fit \\ 
+$\sigma^2_{\rm n20180521.G141.HST.WFC3.G141.Tran}$ & $0.000050\pm0.000034$ & relflux2& fit \\ 
+$\sigma^2_{\rm n20180522.G141.HST.WFC3.G141.Tran}$ & $0.000050\pm0.000034$ & relflux2& fit \\ 
+$\sigma^2_{\rm n20180720.G141.HST.WFC3.G141.Tran}$ & $0.000050\pm0.000034$ & relflux2& fit \\ 
+$\sigma^2_{\rm n20190613.G141.HST.WFC3.G141.Tran}$ & $0.000050\pm0.000034$ & relflux2& fit \\ 
+$\sigma^2_{\rm n20190614.G141.HST.WFC3.G141.Tran}$ & $0.000050\pm0.000034$ & relflux2& fit \\ 
+$\sigma^2_{\rm n20190614.V.HST.Tran}$ & $0.000050\pm0.000034$ & relflux2& fit \\ 
+$\sigma^2_{\rm n20190812.G141.HST.WFC3.G141.Tran}$ & $0.000051\pm0.000034$ & relflux2& fit \\ 
+$\sigma^2_{\rm n20200706.G141.HST.WFC3.G141.Tran}$ & $0.000050\pm0.000034$ & relflux2& fit \\ 
+$\sigma^2_{\rm n20201018.V.CHPS.Tran}$ & $-0.00000000049_{-0.00000000061}^{+0.00000000068}$ & relflux2& fit \\ 
+$\sigma^2_{\rm n20260122.Kepler.K2.Tran}$ & $0.000000000126\pm0.00000000010$ & relflux2& fit \\ 
+$\sigma^2_{\rm n20260122.Spit45.Spit.Tran}$ & $-0.0000000066\pm0.0000000075$ & relflux2& fit \\ 
+$\sigma^2_{\rm n20260122.V.CHPS.Tran}$ & $-0.00000000048_{-0.00000000060}^{+0.00000000068}$ & relflux2& fit \\ 
+$\sigma^2_{\rm n20260122.V.HST.Tran}$ & $0.000050\pm0.000034$ & relflux2& fit \\ 
+$q_{1;\rm n20160213.Kepler.K2.Tran}$ & $0.880_{-0.087}^{+0.074}$ & & fit \\ 
+$q_{2;\rm n20160213.Kepler.K2.Tran}$ & $0.390_{-0.067}^{+0.072}$ & & fit \\ 
+$q_{1;\rm n20260122.Kepler.K2.Tran}$ & $0.8798894170993322$ & & fixed \\ 
+$q_{2;\rm n20260122.Kepler.K2.Tran}$ & $0.38979732054671856$ & & fixed \\ 
+$q_{1;\rm n20161031.Spit45.Spit.Tran}$ & $0.34_{-0.19}^{+0.28}$ & & fit \\ 
+$q_{2;\rm n20161031.Spit45.Spit.Tran}$ & $0.064_{-0.049}^{+0.14}$ & & fit \\ 
+$q_{1;\rm n20260122.Spit45.Spit.Tran}$ & $0.3350584544264439$ & & fixed \\ 
+$q_{2;\rm n20260122.Spit45.Spit.Tran}$ & $0.0638272894643688$ & & fixed \\ 
+$q_{1;\rm n20180521.G141.HST.WFC3.G141.Tran}$ & $0.50\pm0.34$ & & fit \\ 
+$q_{2;\rm n20180521.G141.HST.WFC3.G141.Tran}$ & $0.50\pm0.34$ & & fit \\ 
+$q_{1;\rm n20180522.G141.HST.WFC3.G141.Tran}$ & $0.4952106588078817$ & & fixed \\ 
+$q_{2;\rm n20180522.G141.HST.WFC3.G141.Tran}$ & $0.5029811890267953$ & & fixed \\ 
+$q_{1;\rm n20180720.G141.HST.WFC3.G141.Tran}$ & $0.4952106588078817$ & & fixed \\ 
+$q_{2;\rm n20180720.G141.HST.WFC3.G141.Tran}$ & $0.5029811890267953$ & & fixed \\ 
+$q_{1;\rm n20190613.G141.HST.WFC3.G141.Tran}$ & $0.4952106588078817$ & & fixed \\ 
+$q_{2;\rm n20190613.G141.HST.WFC3.G141.Tran}$ & $0.5029811890267953$ & & fixed \\ 
+$q_{1;\rm n20190614.G141.HST.WFC3.G141.Tran}$ & $0.4952106588078817$ & & fixed \\ 
+$q_{2;\rm n20190614.G141.HST.WFC3.G141.Tran}$ & $0.5029811890267953$ & & fixed \\ 
+$q_{1;\rm n20190812.G141.HST.WFC3.G141.Tran}$ & $0.4952106588078817$ & & fixed \\ 
+$q_{2;\rm n20190812.G141.HST.WFC3.G141.Tran}$ & $0.5029811890267953$ & & fixed \\ 
+$q_{1;\rm n20200706.G141.HST.WFC3.G141.Tran}$ & $0.4952106588078817$ & & fixed \\ 
+$q_{2;\rm n20200706.G141.HST.WFC3.G141.Tran}$ & $0.5029811890267953$ & & fixed \\ 
+$q_{1;\rm n20190614.V.HST.Tran}$ & $0.880_{-0.16}^{+0.090}$ & & fit \\ 
+$q_{2;\rm n20190614.V.HST.Tran}$ & $0.028_{-0.021}^{+0.047}$ & & fit \\ 
+$q_{1;\rm n20201018.V.CHPS.Tran}$ & $0.8799482097821856$ & & fixed \\ 
+$q_{2;\rm n20201018.V.CHPS.Tran}$ & $0.028177563469459314$ & & fixed \\ 
+$q_{1;\rm n20260122.V.CHPS.Tran}$ & $0.8799482097821856$ & & fixed \\ 
+$q_{2;\rm n20260122.V.CHPS.Tran}$ & $0.028177563469459314$ & & fixed \\ 
+$q_{1;\rm n20260122.V.HST.Tran}$ & $0.8799482097821856$ & & fixed \\ 
+$q_{2;\rm n20260122.V.HST.Tran}$ & $0.028177563469459314$ & & fixed \\ 
+$q_{1;\rm n20161002.HARPS-N.RM.RV}$ & $0.52\pm0.34$ & & fit \\ 
+$q_{2;\rm n20161002.HARPS-N.RM.RV}$ & $0.52\pm0.33$ & & fit \\ 
+$q_{1;\rm n20171123.HARPS-N1.RM.RV}$ & $0.5173428609928789$ & & fixed \\ 
+$q_{2;\rm n20171123.HARPS-N1.RM.RV}$ & $0.5166155811510682$ & & fixed \\ 
+$s_v\cos\lambda$ & $0.88_{-0.34}^{+0.28}$ & km^0.5/s^0.5& fit \\ 
+$s_v\sin\lambda$ & $-0.98_{-0.39}^{+0.58}$ & km^0.5/s^0.5& fit \\ 
+$s_{\xi}$ & $1.24\pm0.51$ & & fit \\ 
+$s_{\zeta}$ & $1.21_{-0.49}^{+0.53}$ & & fit \\ 
+$s_{\rm err;SED}$ & $1.22_{-0.28}^{+0.46}$ & & fit \\ 
+$R_A$ & $0.930\pm0.032$ & Rsun& fit \\ 
+$R_{A;\rm SED}$ & $0.861_{-0.014}^{+0.013}$ & Rsun& fit \\ 
+$\log M_A$ & $-0.065_{-0.013}^{+0.016}$ & dex& fit \\ 
+$T_{\rm eff;A}$ & $5300_{-130}^{+150}$ & K& fit \\ 
+$T_{\rm eff;SED;A}$ & $5480_{-150}^{+190}$ & K& fit \\ 
+$[\rm Fe/H].A$ & $0.023_{-0.068}^{+0.075}$ & dex& fit \\ 
+$[\rm Fe/H].{\rm init;A}$ & $0.062_{-0.069}^{+0.073}$ & dex& fit \\ 
+${\rm EEP}_A$ & $390._{-23}^{+12}$ & & fit \\ 
+$A_v$ & $0.21_{-0.13}^{+0.15}$ & mag& fit \\ 
+$\varpi$ & $21.170\pm0.021$ & mas& fit \\ 
