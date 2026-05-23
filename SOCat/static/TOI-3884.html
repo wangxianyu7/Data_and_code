@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TOI-3884 - SOCat</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 1200px; margin: 0 auto; padding: 20px;
+    background: #fff; color: #222;
+  }
+  h1 { margin-bottom: 4px; }
+  h2 { border-bottom: 2px solid #5b2c8e; padding-bottom: 4px; color: #5b2c8e; margin-top: 28px; }
+  .subtitle { color: #666; margin-bottom: 16px; }
+  .links { margin: 12px 0 20px 0; }
+  .links a { color: #0066cc; margin-right: 6px; }
+  .param-table { border-collapse: collapse; width: 100%; margin: 8px 0 20px 0; font-size: 14px; }
+  .param-table th, .param-table td { text-align: left; padding: 5px 16px; border-bottom: 1px solid #e8e8e8; }
+  .param-table thead th { background: #f5f0fa; font-weight: 600; color: #5b2c8e; border-bottom: 2px solid #d4c4e8; }
+  .param-table tbody tr:hover { background: #f9f6fd; }
+  .param-table td:first-child { font-weight: 500; white-space: nowrap; }
+  .tables-row { display: flex; gap: 24px; }
+  .tables-row > div { flex: 1; min-width: 0; }
+  .obliquity-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 8px 0 20px 0; }
+  .obliquity-scroll .param-table { min-width: max-content; }
+  .obliquity-scroll .param-table td:first-child,
+  .obliquity-scroll .param-table th:first-child { position: sticky; left: 0; background: #f5f0fa; z-index: 1; }
+  .obliquity-scroll .param-table tbody td:first-child { background: #fff; }
+  .obliquity-scroll .param-table tbody tr:hover td:first-child { background: #f9f6fd; }
+  .param-table-2col th:nth-child(4), .param-table-2col td:nth-child(4) { border-left: 2px solid #d4c4e8; padding-left: 18px; }
+  .ref-note { color: #888; font-size: 12px; font-style: italic; margin: -12px 0 18px 0; text-align: right; }
+  .ref-merged { vertical-align: middle; text-align: center; border-left: 1px solid #e8e8e8; color: #555; }
+  .planet-fig { margin: 8px 0 24px 0; padding: 0; text-align: center; }
+  .planet-fig img { max-width: 100%; height: auto; border: 1px solid #e8e8e8; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.05); }
+  .planet-fig figcaption { color: #666; font-size: 13px; font-style: italic; margin-top: 6px; }
+  .plotter-frame { width: 100%; height: 1200px; border: 1px solid #e0e0e0; border-radius: 6px; margin: 12px 0 24px 0; }
+  #cusdis_thread { margin: 12px 0 32px 0; }
+  #cusdis_thread iframe { width: 100% !important; min-height: 700px; border: 0; }
+  .back-link { display: inline-block; margin-bottom: 12px; color: #0066cc; text-decoration: none; }
+  .back-link:hover { text-decoration: underline; }
+  .top-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+  .nav-right { display: flex; gap: 8px; }
+  .nav-link { color: #5b2c8e; text-decoration: none; padding: 4px 10px; border: 1px solid #d4c4e8;
+               border-radius: 6px; font-size: 14px; background: #f5f0fa; }
+  .nav-link:hover { background: #5b2c8e; color: white; }
+  @media (max-width: 768px) {
+    .tables-row { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<div class="top-nav">
+  <a class="back-link" href="https://www.stellarobliquity.com/?page=search">&larr; Back to search</a>
+  <div class="nav-right"><a class="nav-link" href="http://localhost:8502/TOI-3714.html" title="TOI-3714">&larr; Prev</a><a class="nav-link" href="http://localhost:8502/TOI-3972.html" title="TOI-3972">Next &rarr;</a></div>
+</div>
+<h1>TOI-3884</h1>
+<p class="subtitle">1 planet(s) in the e-&lambda; Trends catalog (Table 1)</p>
+<div class="links"><b>External:</b> <a href="https://exoplanetarchive.ipac.caltech.edu/overview/TOI-3884" target="_blank">NASA Exoplanet Archive</a> | <a href="https://exoplanet.eu/catalog/?search=TOI-3884" target="_blank">exoplanet.eu</a> | <a href="https://www.astro.keele.ac.uk/jkt/tepcat/planets/TOI-3884.html" target="_blank">TEPCat</a> | <a href="https://exofop.ipac.caltech.edu/tess/target.php?id=86263325" target="_blank">ExoFOP (TIC 86263325)</a> | <a href="https://simbad.u-strasbg.fr/simbad/sim-basic?Ident=TOI-3884" target="_blank">SIMBAD</a></div>
+
+<h2>Stellar Parameters</h2>
+<table class="param-table">
+<thead><tr><th>Parameter</th><th>Value</th><th>Ref</th></tr></thead>
+<tbody>
+  <tr><td>T<sub>eff</sub> (K)</td><td>3180.00 &pm; 88.00</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+  <tr><td>Mass (M<sub>&#9737;</sub>)</td><td>0.298 &pm; 0.018</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+  <tr><td>Radius (R<sub>&#9737;</sub>)</td><td>0.302 &pm; 0.012</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+  <tr><td>[Fe/H] (dex)</td><td>0.04 &pm; 0.12</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+  <tr><td>log g (cgs)</td><td>4.970 &pm; 0.050</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+  <tr><td>v sin i (km/s)</td><td>3.59 &pm; 0.92</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+</tbody>
+</table>
+
+
+<h2>Planet b (TOI-3884 b)</h2>
+<table class="param-table">
+<thead><tr><th>Parameter</th><th>Value</th><th>Ref</th></tr></thead>
+<tbody>
+  <tr><td>Orbital Period (days)</td><td>4.5445828 &pm; 0.0000098</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+  <tr><td>T<sub>C</sub> (BJD<sub>TDB</sub>)</td><td>2459556.51669 &pm; 0.00025</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+  <tr><td>Semi-major Axis (AU)</td><td>0.03610 &pm; 0.00080</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+  <tr><td>a/R<sub>*</sub></td><td>25.90 (+0.96 / &minus;0.71)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+  <tr><td>Mass (M<sub>J</sub>)</td><td>0.103 (+0.023 / &minus;0.023)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+  <tr><td>Mass (M<sub>&#8853;</sub>)</td><td>32.59 (+7.31 / &minus;7.38)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+  <tr><td>Radius (R<sub>J</sub>)</td><td>0.574 &pm; 0.018</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+  <tr><td>Radius (R<sub>&#8853;</sub>)</td><td>6.43 &pm; 0.20</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+  <tr><td>R<sub>p</sub>/R<sub>*</sub></td><td>0.1970 &pm; 0.0020</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+  <tr><td>&rho; (g cm<sup>&minus;3</sup>)</td><td>0.72 (+0.17 / &minus;0.18)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+  <tr><td>Eccentricity</td><td>0.060 (+0.060 / &minus;0.040)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+  <tr><td>&omega; (deg)</td><td>-112.00 (+245.00 / &minus;2.00)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+  <tr><td>Inclination (deg)</td><td>89.81 (+0.13 / &minus;0.18)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+  <tr><td>Impact Parameter</td><td>0.089 (+0.082 / &minus;0.061)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+  <tr><td>Transit Duration (hours)</td><td>1.600 (+0.050 / &minus;0.060)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+  <tr><td>Transit Depth (%)</td><td>3.0740 &pm; 0.0011</td><td>&mdash;</td></tr>
+  <tr><td>RV Semi-amplitude (K) (m/s)</td><td>28.03 (+6.06 / &minus;6.23)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+  <tr><td>T<sub>eq</sub> (K)</td><td>441.00 &pm; 15.00</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+  <tr><td>Insolation S (S<sub>&#8853;</sub>)</td><td>6.42 &pm; 0.92</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L/abstract" target="_blank">Libby+23</a></td></tr>
+  <tr><td>&lambda; (deg)</td><td>75.00 &pm; 10.00</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L" target="_blank">Libby-Roberts+23</a></td></tr>
+</tbody>
+</table>
+
+
+<h3>Obliquity Measurements (3)</h3>
+<div class="obliquity-scroll">
+<table class="param-table">
+<thead><tr><th>Parameter</th><th><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....165..249L" target="_blank">Libby-Roberts_et_al.(2023)</a></th><th><a href="https://ui.adsabs.harvard.edu/abs/arXiv:2506.06445" target="_blank">Mori_et_al._(2025)</a></th><th><a href="https://ui.adsabs.harvard.edu/abs/arXiv:2506.11998" target="_blank">Tamburo_et_al._(2025)</a></th></tr></thead>
+<tbody>
+<tr><td><b>Method</b></td><td><b>SC</b></td><td><b>SC</b></td><td><b>SC</b></td></tr>
+<tr><td>&lambda; (deg)</td><td>75.0 &pm; 10.0</td><td>139.0 (+9.0 / &minus;3.7)</td><td>305.7 &pm; 5.1</td></tr>
+<tr><td>&psi; (deg)</td><td>&mdash;</td><td>118.1 (+5.6 / &minus;2.3)</td><td>76.2 (+2.2 / &minus;2.6)</td></tr>
+</tbody>
+</table>
+</div>
+
+
+<!-- Interactive Plotter temporarily disabled
+<h2>Interactive Plotter</h2>
+<iframe class="plotter-frame" src="https://www.stellarobliquity.com/?page=plotter&amp;highlight=TOI-3884" frameborder="0"></iframe>
+-->
+
+<h2>Comments</h2>
+<p style="color:#666;font-size:13px;margin:0 0 8px 0;font-style:italic;">
+Tip: in the "Nickname" field you can enter your real name or any nickname — both are welcome.
+</p>
+<div id="cusdis_thread"
+  data-host="https://cusdis.com"
+  data-app-id="55355702-2b01-4d09-a94a-5ff7d2b11148"
+  data-page-id="TOI-3884"
+  data-page-url="TOI-3884"
+  data-page-title="TOI-3884"
+></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+<hr>
+<p style="color:#999; font-size:13px;">
+Generated from <code>Table1.csv</code> by <a href="https://github.com/wangxianyu7/RMcat">SOCat</a>.
+</p>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TRAPPIST-1 - SOCat</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 1200px; margin: 0 auto; padding: 20px;
+    background: #fff; color: #222;
+  }
+  h1 { margin-bottom: 4px; }
+  h2 { border-bottom: 2px solid #5b2c8e; padding-bottom: 4px; color: #5b2c8e; margin-top: 28px; }
+  .subtitle { color: #666; margin-bottom: 16px; }
+  .links { margin: 12px 0 20px 0; }
+  .links a { color: #0066cc; margin-right: 6px; }
+  .param-table { border-collapse: collapse; width: 100%; margin: 8px 0 20px 0; font-size: 14px; }
+  .param-table th, .param-table td { text-align: left; padding: 5px 16px; border-bottom: 1px solid #e8e8e8; }
+  .param-table thead th { background: #f5f0fa; font-weight: 600; color: #5b2c8e; border-bottom: 2px solid #d4c4e8; }
+  .param-table tbody tr:hover { background: #f9f6fd; }
+  .param-table td:first-child { font-weight: 500; white-space: nowrap; }
+  .tables-row { display: flex; gap: 24px; }
+  .tables-row > div { flex: 1; min-width: 0; }
+  .obliquity-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 8px 0 20px 0; }
+  .obliquity-scroll .param-table { min-width: max-content; }
+  .obliquity-scroll .param-table td:first-child,
+  .obliquity-scroll .param-table th:first-child { position: sticky; left: 0; background: #f5f0fa; z-index: 1; }
+  .obliquity-scroll .param-table tbody td:first-child { background: #fff; }
+  .obliquity-scroll .param-table tbody tr:hover td:first-child { background: #f9f6fd; }
+  .param-table-2col th:nth-child(4), .param-table-2col td:nth-child(4) { border-left: 2px solid #d4c4e8; padding-left: 18px; }
+  .ref-note { color: #888; font-size: 12px; font-style: italic; margin: -12px 0 18px 0; text-align: right; }
+  .ref-merged { vertical-align: middle; text-align: center; border-left: 1px solid #e8e8e8; color: #555; }
+  .planet-fig { margin: 8px 0 24px 0; padding: 0; text-align: center; }
+  .planet-fig img { max-width: 100%; height: auto; border: 1px solid #e8e8e8; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.05); }
+  .planet-fig figcaption { color: #666; font-size: 13px; font-style: italic; margin-top: 6px; }
+  .plotter-frame { width: 100%; height: 1200px; border: 1px solid #e0e0e0; border-radius: 6px; margin: 12px 0 24px 0; }
+  #cusdis_thread { margin: 12px 0 32px 0; }
+  #cusdis_thread iframe { width: 100% !important; min-height: 700px; border: 0; }
+  .back-link { display: inline-block; margin-bottom: 12px; color: #0066cc; text-decoration: none; }
+  .back-link:hover { text-decoration: underline; }
+  .top-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+  .nav-right { display: flex; gap: 8px; }
+  .nav-link { color: #5b2c8e; text-decoration: none; padding: 4px 10px; border: 1px solid #d4c4e8;
+               border-radius: 6px; font-size: 14px; background: #f5f0fa; }
+  .nav-link:hover { background: #5b2c8e; color: white; }
+  @media (max-width: 768px) {
+    .tables-row { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<div class="top-nav">
+  <a class="back-link" href="https://www.stellarobliquity.com/?page=search">&larr; Back to search</a>
+  <div class="nav-right"><a class="nav-link" href="http://localhost:8502/TOI-942.html" title="TOI-942">&larr; Prev</a><a class="nav-link" href="http://localhost:8502/TrES-1.html" title="TrES-1">Next &rarr;</a></div>
+</div>
+<h1>TRAPPIST-1</h1>
+<p class="subtitle">3 planet(s) in the e-&lambda; Trends catalog (Table 1)</p>
+<div class="links"><b>External:</b> <a href="https://exoplanetarchive.ipac.caltech.edu/overview/TRAPPIST-1" target="_blank">NASA Exoplanet Archive</a> | <a href="https://exoplanet.eu/catalog/?search=TRAPPIST-1" target="_blank">exoplanet.eu</a> | <a href="https://www.astro.keele.ac.uk/jkt/tepcat/planets/TRAPPIST-01.html" target="_blank">TEPCat</a> | <a href="https://exofop.ipac.caltech.edu/tess/target.php?id=278892590" target="_blank">ExoFOP (TIC 278892590)</a> | <a href="https://simbad.u-strasbg.fr/simbad/sim-basic?Ident=TRAPPIST-1" target="_blank">SIMBAD</a></div>
+
+<h2>Stellar Parameters</h2>
+<table class="param-table">
+<thead><tr><th>Parameter</th><th>Value</th><th>Ref</th></tr></thead>
+<tbody>
+  <tr><td>T<sub>eff</sub> (K)</td><td>2566.00 &pm; 26.00</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Mass (M<sub>&#9737;</sub>)</td><td>0.0898 &pm; 0.0023</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Radius (R<sub>&#9737;</sub>)</td><td>0.1192 &pm; 0.0013</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>[Fe/H] (dex)</td><td>0.040 &pm; 0.080</td><td><a href="https://ui.adsabs.harvard.edu/abs/2017Natur.542..456G/abstract" target="_blank">Gillon+17</a></td></tr>
+  <tr><td>log g (cgs)</td><td>5.2396 (+0.0056 / &minus;0.0073)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Age (Gyr)</td><td>0.5000</td><td><a href="https://ui.adsabs.harvard.edu/abs/2016Natur.533..221G/abstract" target="_blank">Gillon+16</a></td></tr>
+  <tr><td>v sin i (km/s)</td><td>2.04 (+0.18 / &minus;0.16)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...890L..27H/abstract" target="_blank">Hirano+20</a></td></tr>
+</tbody>
+</table>
+
+
+<h2>Planet b (TRAPPIST-1 b)</h2>
+<table class="param-table">
+<thead><tr><th>Parameter</th><th>Value</th><th>Ref</th></tr></thead>
+<tbody>
+  <tr><td>Orbital Period (days)</td><td>1.5108260 &pm; 0.0000060</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>T<sub>C</sub> (BJD<sub>TDB</sub>)</td><td>2457322.5141930 &pm; 0.0000030</td><td><a href="https://ui.adsabs.harvard.edu/abs/2020A&A...640A.112D/abstract" target="_blank">Ducrot+20</a></td></tr>
+  <tr><td>Semi-major Axis (AU)</td><td>0.01154 &pm; 0.00010</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>a/R<sub>*</sub></td><td>20.84 (+0.09 / &minus;0.15)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Mass (M<sub>J</sub>)</td><td>0.00432 &pm; 0.00022</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Mass (M<sub>&#8853;</sub>)</td><td>1.374 &pm; 0.069</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Radius (R<sub>J</sub>)</td><td>0.0996 (+0.0012 / &minus;0.0011)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Radius (R<sub>&#8853;</sub>)</td><td>1.116 (+0.014 / &minus;0.012)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>R<sub>p</sub>/R<sub>*</sub></td><td>0.08590 &pm; 0.00037</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>&rho; (g cm<sup>&minus;3</sup>)</td><td>5.81 (+0.36 / &minus;0.35)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Eccentricity</td><td>0.0062 &pm; 0.0030</td><td><a href="https://ui.adsabs.harvard.edu/abs/2018A&A...613A..68G/abstract" target="_blank">Grimm+18</a></td></tr>
+  <tr><td>&omega; (deg)</td><td>336.86 &pm; 34.24</td><td><a href="https://ui.adsabs.harvard.edu/abs/2018A&A...613A..68G/abstract" target="_blank">Grimm+18</a></td></tr>
+  <tr><td>Inclination (deg)</td><td>89.73 &pm; 0.17</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Impact Parameter</td><td>0.095 (+0.065 / &minus;0.061)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Transit Duration (hours)</td><td>0.6010 &pm; 0.0018</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Transit Depth (%)</td><td>0.7378 &pm; 0.0064</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>T<sub>eq</sub> (K)</td><td>397.60 &pm; 3.80</td><td><a href="https://ui.adsabs.harvard.edu/abs/2020A&A...640A.112D/abstract" target="_blank">Ducrot+20</a></td></tr>
+  <tr><td>Insolation S (S<sub>&#8853;</sub>)</td><td>4.15 &pm; 0.20</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>&lambda; (deg)</td><td>15.00 (+26.00 / &minus;30.00)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...890L..27H" target="_blank">Hirano+20</a></td></tr>
+</tbody>
+</table>
+
+
+<h3>Obliquity Measurements (1)</h3>
+<div class="obliquity-scroll">
+<table class="param-table">
+<thead><tr><th>Parameter</th><th><a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...890L..27H" target="_blank">Hirano_et_al.(2020)</a></th></tr></thead>
+<tbody>
+<tr><td><b>Method</b></td><td><b>DT</b></td></tr>
+<tr><td>&lambda; (deg)</td><td>15.0 (+26.0 / &minus;30.0)</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Planet e (TRAPPIST-1 e)</h2>
+<table class="param-table">
+<thead><tr><th>Parameter</th><th>Value</th><th>Ref</th></tr></thead>
+<tbody>
+  <tr><td>Orbital Period (days)</td><td>6.101013 &pm; 0.000035</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>T<sub>C</sub> (BJD<sub>TDB</sub>)</td><td>2457660.367662 &pm; 0.000014</td><td><a href="https://ui.adsabs.harvard.edu/abs/2020A&A...640A.112D/abstract" target="_blank">Ducrot+20</a></td></tr>
+  <tr><td>Semi-major Axis (AU)</td><td>0.0293 &pm; 0.0025</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>a/R<sub>*</sub></td><td>52.85 (+0.24 / &minus;0.39)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Mass (M<sub>J</sub>)</td><td>0.002177 &pm; 0.000069</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Mass (M<sub>&#8853;</sub>)</td><td>0.692 &pm; 0.022</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Radius (R<sub>J</sub>)</td><td>0.0821 (+0.0012 / &minus;0.0011)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Radius (R<sub>&#8853;</sub>)</td><td>0.920 (+0.013 / &minus;0.012)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>R<sub>p</sub>/R<sub>*</sub></td><td>0.07079 &pm; 0.00055</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>&rho; (g cm<sup>&minus;3</sup>)</td><td>5.22 (+0.28 / &minus;0.26)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Eccentricity</td><td>0.00510 &pm; 0.00058</td><td><a href="https://ui.adsabs.harvard.edu/abs/2018A&A...613A..68G/abstract" target="_blank">Grimm+18</a></td></tr>
+  <tr><td>&omega; (deg)</td><td>108.37 &pm; 8.47</td><td><a href="https://ui.adsabs.harvard.edu/abs/2018A&A...613A..68G/abstract" target="_blank">Grimm+18</a></td></tr>
+  <tr><td>Inclination (deg)</td><td>89.793 &pm; 0.048</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Impact Parameter</td><td>0.191 &pm; 0.041</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Transit Duration (hours)</td><td>0.9293 &pm; 0.0043</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Transit Depth (%)</td><td>0.5012 &pm; 0.0078</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>T<sub>eq</sub> (K)</td><td>249.70 &pm; 2.40</td><td><a href="https://ui.adsabs.harvard.edu/abs/2020A&A...640A.112D/abstract" target="_blank">Ducrot+20</a></td></tr>
+  <tr><td>Insolation S (S<sub>&#8853;</sub>)</td><td>0.65 &pm; 0.11</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>&lambda; (deg)</td><td>9.00 (+45.00 / &minus;51.00)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...890L..27H" target="_blank">Hirano+20</a></td></tr>
+</tbody>
+</table>
+
+
+<h3>Obliquity Measurements (1)</h3>
+<div class="obliquity-scroll">
+<table class="param-table">
+<thead><tr><th>Parameter</th><th><a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...890L..27H" target="_blank">Hirano_et_al.(2020)</a></th></tr></thead>
+<tbody>
+<tr><td><b>Method</b></td><td><b>DT</b></td></tr>
+<tr><td>&lambda; (deg)</td><td>9.0 (+45.0 / &minus;51.0)</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Planet f (TRAPPIST-1 f)</h2>
+<table class="param-table">
+<thead><tr><th>Parameter</th><th>Value</th><th>Ref</th></tr></thead>
+<tbody>
+  <tr><td>Orbital Period (days)</td><td>9.207540 &pm; 0.000032</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>T<sub>C</sub> (BJD<sub>TDB</sub>)</td><td>2457671.373730 &pm; 0.000016</td><td><a href="https://ui.adsabs.harvard.edu/abs/2020A&A...640A.112D/abstract" target="_blank">Ducrot+20</a></td></tr>
+  <tr><td>Semi-major Axis (AU)</td><td>0.03849 &pm; 0.00033</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>a/R<sub>*</sub></td><td>69.54 (+0.31 / &minus;0.52)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Mass (M<sub>J</sub>)</td><td>0.003269 &pm; 0.000098</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Mass (M<sub>&#8853;</sub>)</td><td>1.039 &pm; 0.031</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Radius (R<sub>J</sub>)</td><td>0.0932 (+0.0012 / &minus;0.0011)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Radius (R<sub>&#8853;</sub>)</td><td>1.045 (+0.013 / &minus;0.012)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>R<sub>p</sub>/R<sub>*</sub></td><td>0.08040 &pm; 0.00047</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>&rho; (g cm<sup>&minus;3</sup>)</td><td>5.35 (+0.26 / &minus;0.24)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Eccentricity</td><td>0.01007 &pm; 0.00068</td><td><a href="https://ui.adsabs.harvard.edu/abs/2018A&A...613A..68G/abstract" target="_blank">Grimm+18</a></td></tr>
+  <tr><td>&omega; (deg)</td><td>368.81 &pm; 3.11</td><td><a href="https://ui.adsabs.harvard.edu/abs/2018A&A...613A..68G/abstract" target="_blank">Grimm+18</a></td></tr>
+  <tr><td>Inclination (deg)</td><td>89.740 &pm; 0.019</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Impact Parameter</td><td>0.312 (+0.023 / &minus;0.018)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Transit Duration (hours)</td><td>1.0480 &pm; 0.0042</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>Transit Depth (%)</td><td>0.6465 &pm; 0.0076</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>T<sub>eq</sub> (K)</td><td>217.70 &pm; 2.10</td><td><a href="https://ui.adsabs.harvard.edu/abs/2020A&A...640A.112D/abstract" target="_blank">Ducrot+20</a></td></tr>
+  <tr><td>Insolation S (S<sub>&#8853;</sub>)</td><td>0.373 &pm; 0.018</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021PSJ.....2....1A/abstract" target="_blank">Agol+21</a></td></tr>
+  <tr><td>&lambda; (deg)</td><td>21.00 &pm; 32.00</td><td><a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...890L..27H" target="_blank">Hirano+20</a></td></tr>
+</tbody>
+</table>
+
+
+<h3>Obliquity Measurements (1)</h3>
+<div class="obliquity-scroll">
+<table class="param-table">
+<thead><tr><th>Parameter</th><th><a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...890L..27H" target="_blank">Hirano_et_al.(2020)</a></th></tr></thead>
+<tbody>
+<tr><td><b>Method</b></td><td><b>DT</b></td></tr>
+<tr><td>&lambda; (deg)</td><td>21.0 &pm; 32.0</td></tr>
+</tbody>
+</table>
+</div>
+
+
+<!-- Interactive Plotter temporarily disabled
+<h2>Interactive Plotter</h2>
+<iframe class="plotter-frame" src="https://www.stellarobliquity.com/?page=plotter&amp;highlight=TRAPPIST-1" frameborder="0"></iframe>
+-->
+
+<h2>Comments</h2>
+<p style="color:#666;font-size:13px;margin:0 0 8px 0;font-style:italic;">
+Tip: in the "Nickname" field you can enter your real name or any nickname — both are welcome.
+</p>
+<div id="cusdis_thread"
+  data-host="https://cusdis.com"
+  data-app-id="55355702-2b01-4d09-a94a-5ff7d2b11148"
+  data-page-id="TRAPPIST-1"
+  data-page-url="TRAPPIST-1"
+  data-page-title="TRAPPIST-1"
+></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+<hr>
+<p style="color:#999; font-size:13px;">
+Generated from <code>Table1.csv</code> by <a href="https://github.com/wangxianyu7/RMcat">SOCat</a>.
+</p>
+</body>
+</html>

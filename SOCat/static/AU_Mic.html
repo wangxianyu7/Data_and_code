@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AU Mic - SOCat</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 1200px; margin: 0 auto; padding: 20px;
+    background: #fff; color: #222;
+  }
+  h1 { margin-bottom: 4px; }
+  h2 { border-bottom: 2px solid #5b2c8e; padding-bottom: 4px; color: #5b2c8e; margin-top: 28px; }
+  .subtitle { color: #666; margin-bottom: 16px; }
+  .links { margin: 12px 0 20px 0; }
+  .links a { color: #0066cc; margin-right: 6px; }
+  .param-table { border-collapse: collapse; width: 100%; margin: 8px 0 20px 0; font-size: 14px; }
+  .param-table th, .param-table td { text-align: left; padding: 5px 16px; border-bottom: 1px solid #e8e8e8; }
+  .param-table thead th { background: #f5f0fa; font-weight: 600; color: #5b2c8e; border-bottom: 2px solid #d4c4e8; }
+  .param-table tbody tr:hover { background: #f9f6fd; }
+  .param-table td:first-child { font-weight: 500; white-space: nowrap; }
+  .tables-row { display: flex; gap: 24px; }
+  .tables-row > div { flex: 1; min-width: 0; }
+  .obliquity-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 8px 0 20px 0; }
+  .obliquity-scroll .param-table { min-width: max-content; }
+  .obliquity-scroll .param-table td:first-child,
+  .obliquity-scroll .param-table th:first-child { position: sticky; left: 0; background: #f5f0fa; z-index: 1; }
+  .obliquity-scroll .param-table tbody td:first-child { background: #fff; }
+  .obliquity-scroll .param-table tbody tr:hover td:first-child { background: #f9f6fd; }
+  .param-table-2col th:nth-child(4), .param-table-2col td:nth-child(4) { border-left: 2px solid #d4c4e8; padding-left: 18px; }
+  .ref-note { color: #888; font-size: 12px; font-style: italic; margin: -12px 0 18px 0; text-align: right; }
+  .ref-merged { vertical-align: middle; text-align: center; border-left: 1px solid #e8e8e8; color: #555; }
+  .planet-fig { margin: 8px 0 24px 0; padding: 0; text-align: center; }
+  .planet-fig img { max-width: 100%; height: auto; border: 1px solid #e8e8e8; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.05); }
+  .planet-fig figcaption { color: #666; font-size: 13px; font-style: italic; margin-top: 6px; }
+  .plotter-frame { width: 100%; height: 1200px; border: 1px solid #e0e0e0; border-radius: 6px; margin: 12px 0 24px 0; }
+  #cusdis_thread { margin: 12px 0 32px 0; }
+  #cusdis_thread iframe { width: 100% !important; min-height: 700px; border: 0; }
+  .back-link { display: inline-block; margin-bottom: 12px; color: #0066cc; text-decoration: none; }
+  .back-link:hover { text-decoration: underline; }
+  .top-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+  .nav-right { display: flex; gap: 8px; }
+  .nav-link { color: #5b2c8e; text-decoration: none; padding: 4px 10px; border: 1px solid #d4c4e8;
+               border-radius: 6px; font-size: 14px; background: #f5f0fa; }
+  .nav-link:hover { background: #5b2c8e; color: white; }
+  @media (max-width: 768px) {
+    .tables-row { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<div class="top-nav">
+  <a class="back-link" href="https://www.stellarobliquity.com/?page=search">&larr; Back to search</a>
+  <div class="nav-right"><a class="nav-link" href="http://localhost:8502/55_Cnc.html" title="55 Cnc">&larr; Prev</a><a class="nav-link" href="http://localhost:8502/CoRoT-1.html" title="CoRoT-1">Next &rarr;</a></div>
+</div>
+<h1>AU Mic</h1>
+<p class="subtitle">2 planet(s) in the e-&lambda; Trends catalog (Table 1)</p>
+<div class="links"><b>External:</b> <a href="https://exoplanetarchive.ipac.caltech.edu/overview/AU+Mic" target="_blank">NASA Exoplanet Archive</a> | <a href="https://exoplanet.eu/catalog/?search=AU+Mic" target="_blank">exoplanet.eu</a> | <a href="https://www.astro.keele.ac.uk/jkt/tepcat/planets/AU_Mic.html" target="_blank">TEPCat</a> | <a href="https://exofop.ipac.caltech.edu/tess/target.php?id=441420236" target="_blank">ExoFOP (TIC 441420236)</a> | <a href="https://simbad.u-strasbg.fr/simbad/sim-basic?Ident=AU+Mic" target="_blank">SIMBAD</a></div>
+
+<h2>Stellar Parameters</h2>
+<table class="param-table">
+<thead><tr><th>Parameter</th><th>Value</th><th>Ref</th></tr></thead>
+<tbody>
+  <tr><td>T<sub>eff</sub> (K)</td><td>3678.00 (+90.00 / &minus;88.00)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>Mass (M<sub>&#9737;</sub>)</td><td>0.510 (+0.028 / &minus;0.027)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>Radius (R<sub>&#9737;</sub>)</td><td>0.744 (+0.023 / &minus;0.021)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>[Fe/H] (dex)</td><td>0.23 (+0.24 / &minus;0.30)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>log g (cgs)</td><td>4.404 (+0.026 / &minus;0.031)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>Age (Gyr)</td><td>0.0201 (+0.0025 / &minus;0.0024)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>v sin i (km/s)</td><td>8.50 &pm; 0.20</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.525..455D/abstract" target="_blank">Donati+23</a></td></tr>
+</tbody>
+</table>
+
+
+<h2>Planet b (AU Mic b)</h2>
+<table class="param-table">
+<thead><tr><th>Parameter</th><th>Value</th><th>Ref</th></tr></thead>
+<tbody>
+  <tr><td>Orbital Period (days)</td><td>8.463080 &pm; 0.000060</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>T<sub>C</sub> (BJD<sub>TDB</sub>)</td><td>2458525.04109 (+0.00052 / &minus;0.00051)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>Semi-major Axis (AU)</td><td>0.0649 &pm; 0.0012</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>a/R<sub>*</sub></td><td>18.79 (+0.50 / &minus;0.59)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>Mass (M<sub>J</sub>)</td><td>0.0633 (+0.0049 / &minus;0.0054)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021AJ....162..295C/abstract" target="_blank">Cale+21</a></td></tr>
+  <tr><td>Mass (M<sub>&#8853;</sub>)</td><td>20.12 (+1.57 / &minus;1.72)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021AJ....162..295C/abstract" target="_blank">Cale+21</a></td></tr>
+  <tr><td>M sin i (M<sub>J</sub>)</td><td>0.1800</td><td><a href="https://ui.adsabs.harvard.edu/abs/2020Natur.582..497P/abstract" target="_blank">Plavchan+20</a></td></tr>
+  <tr><td>Radius (R<sub>J</sub>)</td><td>0.353 &pm; 0.013</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>Radius (R<sub>&#8853;</sub>)</td><td>3.96 &pm; 0.15</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>R<sub>p</sub>/R<sub>*</sub></td><td>0.0488 &pm; 0.0010</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>&rho; (g cm<sup>&minus;3</sup>)</td><td>1.91 (+0.26 / &minus;0.27)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021AJ....162..295C/abstract" target="_blank">Cale+21</a></td></tr>
+  <tr><td>Eccentricity</td><td>0.0058 &pm; 0.0010</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>&omega; (deg)</td><td>88.430 &pm; 0.058</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>Inclination (deg)</td><td>89.58 &pm; 0.38</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>Impact Parameter</td><td>0.134 (+0.096 / &minus;0.089)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>Transit Duration (hours)</td><td>3.4927 (+0.0074 / &minus;0.0067)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>Transit Depth (%)</td><td>0.238 (+0.010 / &minus;0.010)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>RV Semi-amplitude (K) (m/s)</td><td>10.23 (+0.88 / &minus;0.91)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021AJ....162..295C/abstract" target="_blank">Cale+21</a></td></tr>
+  <tr><td>T<sub>eq</sub> (K)</td><td>600.00 (+17.00 / &minus;16.00)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>Insolation S (S<sub>&#8853;</sub>)</td><td>21.58 (+2.62 / &minus;2.53)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>&lambda; (deg)</td><td>5.00 (+16.00 / &minus;15.00)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021AJ....162..137A" target="_blank">Addison+21</a></td></tr>
+</tbody>
+</table>
+
+
+<h3>Obliquity Measurements (4)</h3>
+<div class="obliquity-scroll">
+<table class="param-table">
+<thead><tr><th>Parameter</th><th><a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...899L..13H" target="_blank">Hirano_et_al._(2020)</a></th><th><a href="https://ui.adsabs.harvard.edu/abs/2021A%26A...649A.177M" target="_blank">Martioli_et_al._(2021)</a></th><th><a href="https://ui.adsabs.harvard.edu/abs/2020A%26A...643A..25P" target="_blank">Palle_et_al._(2020)</a></th><th><a href="https://ui.adsabs.harvard.edu/abs/2021AJ....162..137A" target="_blank">Addison_et_al._(2021)</a></th></tr></thead>
+<tbody>
+<tr><td><b>Method</b></td><td><b>DT</b></td><td><b>RM</b></td><td><b>RM</b></td><td><b>RM</b></td></tr>
+<tr><td>&lambda; (deg)</td><td>-4.7 (+6.8 / &minus;6.4)</td><td>-0.1 (+5.1 / &minus;5.0)</td><td>-3.0 (+10.4 / &minus;10.3)</td><td>5.0 (+16.0 / &minus;15.0)</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Planet c (AU Mic c)</h2>
+<table class="param-table">
+<thead><tr><th>Parameter</th><th>Value</th><th>Ref</th></tr></thead>
+<tbody>
+  <tr><td>Orbital Period (days)</td><td>18.859690 &pm; 0.000080</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>T<sub>C</sub> (BJD<sub>TDB</sub>)</td><td>2458342.2240 (+0.0019 / &minus;0.0018)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>Semi-major Axis (AU)</td><td>0.1108 &pm; 0.0020</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>a/R<sub>*</sub></td><td>32.05 (+0.86 / &minus;1.00)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>Mass (M<sub>J</sub>)</td><td>0.0302 (+0.0065 / &minus;0.0073)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021AJ....162..295C/abstract" target="_blank">Cale+21</a></td></tr>
+  <tr><td>Mass (M<sub>&#8853;</sub>)</td><td>9.60 (+2.07 / &minus;2.31)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021AJ....162..295C/abstract" target="_blank">Cale+21</a></td></tr>
+  <tr><td>Radius (R<sub>J</sub>)</td><td>0.225 &pm; 0.022</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>Radius (R<sub>&#8853;</sub>)</td><td>2.52 &pm; 0.25</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>R<sub>p</sub>/R<sub>*</sub></td><td>0.0311 &pm; 0.0028</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>&rho; (g cm<sup>&minus;3</sup>)</td><td>3.52 (+1.28 / &minus;1.33)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021AJ....162..295C/abstract" target="_blank">Cale+21</a></td></tr>
+  <tr><td>Eccentricity</td><td>0.0034 &pm; 0.0016</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>&omega; (deg)</td><td>223.28 &pm; 1.68</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>Inclination (deg)</td><td>89.23 &pm; 0.22</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>Impact Parameter</td><td>0.30 (+0.13 / &minus;0.19)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>Transit Duration (hours)</td><td>4.236 &pm; 0.029</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>Transit Depth (%)</td><td>0.097 (+0.018 / &minus;0.017)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>RV Semi-amplitude (K) (m/s)</td><td>3.68 (+0.87 / &minus;0.86)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2021AJ....162..295C/abstract" target="_blank">Cale+21</a></td></tr>
+  <tr><td>T<sub>eq</sub> (K)</td><td>459.00 (+13.00 / &minus;12.00)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>Insolation S (S<sub>&#8853;</sub>)</td><td>7.40 (+0.90 / &minus;0.86)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..232W/abstract" target="_blank">Wittrock+23</a></td></tr>
+  <tr><td>&lambda; (deg)</td><td>68.00 (+32.00 / &minus;49.00)</td><td><a href="https://ui.adsabs.harvard.edu/abs/2025MNRAS.536.2046Y" target="_blank">Yu+25</a></td></tr>
+</tbody>
+</table>
+
+
+<h3>Obliquity Measurements (1)</h3>
+<div class="obliquity-scroll">
+<table class="param-table">
+<thead><tr><th>Parameter</th><th><a href="https://ui.adsabs.harvard.edu/abs/2025MNRAS.536.2046Y" target="_blank">Yu_et_al._(2025)</a></th></tr></thead>
+<tbody>
+<tr><td><b>Method</b></td><td><b>RM</b></td></tr>
+<tr><td>&lambda; (deg)</td><td>68.0 (+32.0 / &minus;49.0)</td></tr>
+</tbody>
+</table>
+</div>
+
+
+<!-- Interactive Plotter temporarily disabled
+<h2>Interactive Plotter</h2>
+<iframe class="plotter-frame" src="https://www.stellarobliquity.com/?page=plotter&amp;highlight=AU Mic" frameborder="0"></iframe>
+-->
+
+<h2>Comments</h2>
+<p style="color:#666;font-size:13px;margin:0 0 8px 0;font-style:italic;">
+Tip: in the "Nickname" field you can enter your real name or any nickname — both are welcome.
+</p>
+<div id="cusdis_thread"
+  data-host="https://cusdis.com"
+  data-app-id="55355702-2b01-4d09-a94a-5ff7d2b11148"
+  data-page-id="AU Mic"
+  data-page-url="AU Mic"
+  data-page-title="AU Mic"
+></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+<hr>
+<p style="color:#999; font-size:13px;">
+Generated from <code>Table1.csv</code> by <a href="https://github.com/wangxianyu7/RMcat">SOCat</a>.
+</p>
+</body>
+</html>

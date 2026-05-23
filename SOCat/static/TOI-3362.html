@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TOI-3362 - SOCat</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 1200px; margin: 0 auto; padding: 20px;
+    background: #fff; color: #222;
+  }
+  h1 { margin-bottom: 4px; }
+  h2 { border-bottom: 2px solid #5b2c8e; padding-bottom: 4px; color: #5b2c8e; margin-top: 28px; }
+  .subtitle { color: #666; margin-bottom: 16px; }
+  .links { margin: 12px 0 20px 0; }
+  .links a { color: #0066cc; margin-right: 6px; }
+  .param-table { border-collapse: collapse; width: 100%; margin: 8px 0 20px 0; font-size: 14px; }
+  .param-table th, .param-table td { text-align: left; padding: 5px 16px; border-bottom: 1px solid #e8e8e8; }
+  .param-table thead th { background: #f5f0fa; font-weight: 600; color: #5b2c8e; border-bottom: 2px solid #d4c4e8; }
+  .param-table tbody tr:hover { background: #f9f6fd; }
+  .param-table td:first-child { font-weight: 500; white-space: nowrap; }
+  .tables-row { display: flex; gap: 24px; }
+  .tables-row > div { flex: 1; min-width: 0; }
+  .obliquity-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 8px 0 20px 0; }
+  .obliquity-scroll .param-table { min-width: max-content; }
+  .obliquity-scroll .param-table td:first-child,
+  .obliquity-scroll .param-table th:first-child { position: sticky; left: 0; background: #f5f0fa; z-index: 1; }
+  .obliquity-scroll .param-table tbody td:first-child { background: #fff; }
+  .obliquity-scroll .param-table tbody tr:hover td:first-child { background: #f9f6fd; }
+  .param-table-2col th:nth-child(4), .param-table-2col td:nth-child(4) { border-left: 2px solid #d4c4e8; padding-left: 18px; }
+  .ref-note { color: #888; font-size: 12px; font-style: italic; margin: -12px 0 18px 0; text-align: right; }
+  .ref-merged { vertical-align: middle; text-align: center; border-left: 1px solid #e8e8e8; color: #555; }
+  .planet-fig { margin: 8px 0 24px 0; padding: 0; text-align: center; }
+  .planet-fig img { max-width: 100%; height: auto; border: 1px solid #e8e8e8; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.05); }
+  .planet-fig figcaption { color: #666; font-size: 13px; font-style: italic; margin-top: 6px; }
+  .plotter-frame { width: 100%; height: 1200px; border: 1px solid #e0e0e0; border-radius: 6px; margin: 12px 0 24px 0; }
+  #cusdis_thread { margin: 12px 0 32px 0; }
+  #cusdis_thread iframe { width: 100% !important; min-height: 700px; border: 0; }
+  .back-link { display: inline-block; margin-bottom: 12px; color: #0066cc; text-decoration: none; }
+  .back-link:hover { text-decoration: underline; }
+  .top-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+  .nav-right { display: flex; gap: 8px; }
+  .nav-link { color: #5b2c8e; text-decoration: none; padding: 4px 10px; border: 1px solid #d4c4e8;
+               border-radius: 6px; font-size: 14px; background: #f5f0fa; }
+  .nav-link:hover { background: #5b2c8e; color: white; }
+  @media (max-width: 768px) {
+    .tables-row { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<div class="top-nav">
+  <a class="back-link" href="https://www.stellarobliquity.com/?page=search">&larr; Back to search</a>
+  <div class="nav-right"><a class="nav-link" href="http://localhost:8502/TOI-2533.html" title="TOI-2533">&larr; Prev</a><a class="nav-link" href="http://localhost:8502/TOI-3714.html" title="TOI-3714">Next &rarr;</a></div>
+</div>
+<h1>TOI-3362</h1>
+<p class="subtitle">1 planet(s) in the e-&lambda; Trends catalog (Table 1)</p>
+<div class="links"><b>External:</b> <a href="https://exoplanetarchive.ipac.caltech.edu/overview/TOI-3362" target="_blank">NASA Exoplanet Archive</a> | <a href="https://exoplanet.eu/catalog/?search=TOI-3362" target="_blank">exoplanet.eu</a> | <a href="https://www.astro.keele.ac.uk/jkt/tepcat/planets/TOI-3362.html" target="_blank">TEPCat</a> | <a href="https://exofop.ipac.caltech.edu/tess/target.php?id=464300749" target="_blank">ExoFOP (TIC 464300749)</a> | <a href="https://simbad.u-strasbg.fr/simbad/sim-basic?Ident=TOI-3362" target="_blank">SIMBAD</a></div>
+
+<h2>Stellar Parameters</h2>
+<table class="param-table">
+<thead><tr><th>Parameter</th><th>Value</th><th>Ref</th></tr></thead>
+<tbody>
+  <tr><td>T<sub>eff</sub> (K)</td><td>6810.00 (+230.00 / &minus;190.00)</td><td><i>WWB</i></td></tr>
+  <tr><td>Mass (M<sub>&#9737;</sub>)</td><td>1.533 (+0.075 / &minus;0.080)</td><td><i>WWB</i></td></tr>
+  <tr><td>Radius (R<sub>&#9737;</sub>)</td><td>1.693 (+0.066 / &minus;0.064)</td><td><i>WWB</i></td></tr>
+  <tr><td>[Fe/H] (dex)</td><td>0.037 (+0.066 / &minus;0.059)</td><td><i>WWB</i></td></tr>
+  <tr><td>log g (cgs)</td><td>4.165 &pm; 0.045</td><td><i>WWB</i></td></tr>
+  <tr><td>Age (Gyr)</td><td>1.11 (+0.65 / &minus;0.51)</td><td><i>WWB</i></td></tr>
+  <tr><td>v sin i (km/s)</td><td>21.70 (+1.60 / &minus;1.50)</td><td><i>WWB</i></td></tr>
+  <tr><td>Binary/Multi-Star Flag</td><td>N</td><td><i>WWB</i></td></tr>
+</tbody>
+</table>
+
+
+<h2>Planet b (TOI-3362 b)</h2>
+<table class="param-table">
+<thead><tr><th>Parameter</th><th>Value</th><th>Ref</th></tr></thead>
+<tbody>
+  <tr><td>Orbital Period (days)</td><td>18.0953415 (+0.0000092 / &minus;0.0000089)</td><td><i>WWB</i></td></tr>
+  <tr><td>T<sub>C</sub> (BJD<sub>TDB</sub>)</td><td>2458529.32961 (+0.00081 / &minus;0.00084)</td><td><i>WWB</i></td></tr>
+  <tr><td>Semi-major Axis (AU)</td><td>0.1538 (+0.0074 / &minus;0.0069)</td><td><i>WWB</i></td></tr>
+  <tr><td>a/R<sub>*</sub></td><td>19.73 (+0.95 / &minus;0.89)</td><td><i>WWB</i></td></tr>
+  <tr><td>Mass (M<sub>J</sub>)</td><td>3.26 (+0.41 / &minus;0.37)</td><td><i>WWB</i></td></tr>
+  <tr><td>Mass (M<sub>&#8853;</sub>)</td><td>1036.13 (+130.31 / &minus;117.60)</td><td><i>WWB</i></td></tr>
+  <tr><td>Radius (R<sub>J</sub>)</td><td>1.107 (+0.021 / &minus;0.023)</td><td><i>WWB</i></td></tr>
+  <tr><td>Radius (R<sub>&#8853;</sub>)</td><td>12.41 (+0.24 / &minus;0.26)</td><td><i>WWB</i></td></tr>
+  <tr><td>R<sub>p</sub>/R<sub>*</sub></td><td>0.0679 (+0.0013 / &minus;0.0014)</td><td><i>WWB</i></td></tr>
+  <tr><td>&rho; (g cm<sup>&minus;3</sup>)</td><td>3.19 (+0.44 / &minus;0.41)</td><td><i>WWB</i></td></tr>
+  <tr><td>Eccentricity</td><td>0.738 (+0.015 / &minus;0.017)</td><td><i>WWB</i></td></tr>
+  <tr><td>&omega; (deg)</td><td>61.00 (+11.00 / &minus;6.00)</td><td><i>WWB</i></td></tr>
+  <tr><td>Inclination (deg)</td><td>85.50 (+2.10 / &minus;1.10)</td><td><i>WWB</i></td></tr>
+  <tr><td>Impact Parameter</td><td>0.43 (+0.10 / &minus;0.21)</td><td><i>WWB</i></td></tr>
+  <tr><td>Transit Duration (hours)</td><td>2.825 (+0.030 / &minus;0.029)</td><td><i>WWB</i></td></tr>
+  <tr><td>Transit Depth (%)</td><td>0.527 (+0.032 / &minus;0.030)</td><td><i>WWB</i></td></tr>
+  <tr><td>RV Semi-amplitude (K) (m/s)</td><td>307.00 (+28.00 / &minus;26.00)</td><td><i>WWB</i></td></tr>
+  <tr><td>T<sub>eq</sub> (K)</td><td>958.00 &pm; 22.00</td><td><i>WWB</i></td></tr>
+  <tr><td>Insolation S (S<sub>&#8853;</sub>)</td><td>233.82 (+42.85 / &minus;37.86)</td><td><i>WWB</i></td></tr>
+  <tr><td>&lambda; (deg)</td><td>-1.20 (+3.90 / &minus;4.40)</td><td><i>WWB</i></td></tr>
+</tbody>
+</table>
+
+<figure class="planet-fig"><img src="https://raw.githubusercontent.com/wangxianyu7/Data_and_code/main/e-%CE%BB_Trends/Figs/TOI-3362_b.png" alt="Diagnostic figure for TOI-3362 b" loading="lazy" onerror="this.parentElement.style.display='none'"><figcaption>Diagnostic plot — TOI-3362 b</figcaption></figure>
+<h3>Obliquity Measurements (3)</h3>
+<div class="obliquity-scroll">
+<table class="param-table">
+<thead><tr><th>Parameter</th><th><i>WWB</i></th><th><a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...958L..20E" target="_blank">Espinoza-Retamal_et_al._(2023)</a></th><th><a href="https://ui.adsabs.harvard.edu/abs/2024AJ....168..133P" target="_blank">Prinoth_et_al._(2024)</a></th></tr></thead>
+<tbody>
+<tr><td><b>Method</b></td><td><b>RM</b></td><td><b>RM</b></td><td><b>DT</b></td></tr>
+<tr><td>&lambda; (deg)</td><td>-1.20 (+3.90 / &minus;4.40)</td><td>1.2 (+2.8 / &minus;2.7)</td><td>2.0 (+4.0 / &minus;5.0)</td></tr>
+</tbody>
+</table>
+</div>
+
+
+<!-- Interactive Plotter temporarily disabled
+<h2>Interactive Plotter</h2>
+<iframe class="plotter-frame" src="https://www.stellarobliquity.com/?page=plotter&amp;highlight=TOI-3362" frameborder="0"></iframe>
+-->
+
+<h2>Comments</h2>
+<p style="color:#666;font-size:13px;margin:0 0 8px 0;font-style:italic;">
+Tip: in the "Nickname" field you can enter your real name or any nickname — both are welcome.
+</p>
+<div id="cusdis_thread"
+  data-host="https://cusdis.com"
+  data-app-id="55355702-2b01-4d09-a94a-5ff7d2b11148"
+  data-page-id="TOI-3362"
+  data-page-url="TOI-3362"
+  data-page-title="TOI-3362"
+></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+<hr>
+<p style="color:#999; font-size:13px;">
+Generated from <code>Table1.csv</code> by <a href="https://github.com/wangxianyu7/RMcat">SOCat</a>.
+</p>
+</body>
+</html>
