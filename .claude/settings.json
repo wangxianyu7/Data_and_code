@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sed -E 's/_[bcdefg]\\(_bimodal\\)?\\\\.png$//')"
+    ]
+  }
+}
